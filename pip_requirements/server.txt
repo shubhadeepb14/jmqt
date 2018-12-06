@@ -1,0 +1,7 @@
+redis
+websockets
+aiohttp
+aiohttp_cors
+websockets
+mysqlclient
+peewee

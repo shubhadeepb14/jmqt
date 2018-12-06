@@ -1,0 +1,88 @@
+<!--  The MIT License (MIT)
+ Copyright (c) 2018 Shubhadeep Banerjee
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+ OR OTHER DEALINGS IN THE SOFTWARE. -->
+
+<html>
+
+<head>
+    <title>JMQT v1.0 Test Suite</title>
+    <link rel="shortcut icon" href="static/images/facdetecticon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- js -->
+    <script type="text/javascript" src="static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/angular.min.js"></script>
+    <script type="text/javascript" src="static/js/angular-ui-router.js"></script>
+
+    <!-- jmqt client -->
+    <script type="text/javascript" src="static/js/jmqt-client.js"></script>
+
+    <!-- css -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- project related resources -->
+    <link href="app.css" rel="stylesheet">
+    <script src="app.js"></script>
+
+    <!-- services -->
+    <script src="services/jmqtService.js"></script>
+
+    <!-- controllers -->
+    <script src="controllers/homeCtrl.js"></script>
+</head>
+
+<body ng-app="app">
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">JMQT v1.0 Test Suite</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main role="main" class="container">
+        <div class="main-div">
+            <ui-view></ui-view>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row mt-2 small text-muted">
+                <p>
+                    This Test Suite has been developed for JMQT Protocol version 1.0, and is only compatible
+                    with the 'sample_server' available in the git package. For more details visit <a _target="blank"
+                        href='https://github.com/shubhadeepb14/jmqt'>JMQT GitHub Repository</a>
+                </p>
+                <br />
+                <p>
+                    <b>Distributed under The MIT License (MIT)</b> <br>
+                    Copyright (c) 2018 Shubhadeep Banerjee
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
