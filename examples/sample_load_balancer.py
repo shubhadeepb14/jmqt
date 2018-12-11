@@ -44,7 +44,7 @@ root_path = os.path.dirname(os.path.realpath(__file__))
 
 if __name__ == '__main__':
 
-    configFilename = os.path.join(root_path, 'config.conf')
+    configFilename = os.path.join(root_path, 'load_balancer.conf')
     for arg in sys.argv[1:]:
         if arg == '--help':
             printUsage(sys.stdout)

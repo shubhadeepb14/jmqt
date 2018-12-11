@@ -1,0 +1,1344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1561.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 16.0px; font: 14.7px Verdana; color: #454545; -webkit-text-stroke: #454545; background-color: #ffffff}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; line-height: 15.0px; font: 13.3px Verdana; color: #454545; -webkit-text-stroke: #454545; background-color: #ffffff; min-height: 16.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; line-height: 13.0px; font: 13.3px Verdana; color: #454545; -webkit-text-stroke: #454545; background-color: #ffffff}
+    p.p5 {margin: 0.0px 0.0px 0.0px 24.0px; text-align: justify; line-height: 13.0px; font: 13.3px Verdana; color: #454545; -webkit-text-stroke: #454545; background-color: #ffffff}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; line-height: 15.0px; font: 13.3px Verdana; color: #454545; -webkit-text-stroke: #454545; background-color: #ffffff}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 13.0px; font: 13.3px Verdana; color: #454545; -webkit-text-stroke: #454545; background-color: #ffffff}
+    p.p9 {margin: 0.0px 1.3px 0.0px 1.3px; line-height: 13.0px; font: 13.3px 'Courier New'; color: #000000; -webkit-text-stroke: #000000; background-color: #ffffff}
+    p.p12 {margin: 0.0px 1.3px 0.0px 1.3px; line-height: 13.0px; font: 13.3px Verdana; color: #454545; -webkit-text-stroke: #454545; background-color: #ffffff; min-height: 16.0px}
+    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; line-height: 16.0px; font: 14.0px Verdana; color: #454545; -webkit-text-stroke: #454545; background-color: #ffffff}
+    li.li7 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: justify; line-height: 15.0px; font: 13.3px Verdana; color: #454545; -webkit-text-stroke: #454545; background-color: #ffffff}
+    span.s1 {font-kerning: none}
+    span.s2 {text-decoration: underline ; font-kerning: none}
+    span.s3 {font: 13.3px Verdana; text-decoration: underline ; font-kerning: none; color: #1155cc; -webkit-text-stroke: 0px #1155cc}
+    span.s4 {-webkit-text-stroke: 0px #000000}
+    span.s5 {text-decoration: underline ; font-kerning: none; color: #1155cc; -webkit-text-stroke: 0px #1155cc}
+    span.s6 {font: 13.3px 'Courier New'; font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    table.t1 {border-collapse: collapse}
+    td.td1 {width: 107.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.7px 6.7px 6.7px 6.7px}
+    td.td2 {width: 205.8px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.7px 6.7px 6.7px 6.7px}
+    td.td3 {width: 148.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.7px 6.7px 6.7px 6.7px}
+    td.td4 {width: 143.9px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.7px 6.7px 6.7px 6.7px}
+    td.td5 {width: 155.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.7px 6.7px 6.7px 6.7px}
+    td.td6 {width: 146.9px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.7px 6.7px 6.7px 6.7px}
+    td.td7 {width: 149.1px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.7px 6.7px 6.7px 6.7px}
+    td.td8 {width: 153.6px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.7px 6.7px 6.7px 6.7px}
+    td.td9 {width: 155.2px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.7px 6.7px 6.7px 6.7px}
+    td.td10 {width: 146.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.7px 6.7px 6.7px 6.7px}
+    td.td11 {width: 150.2px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.7px 6.7px 6.7px 6.7px}
+    td.td12 {width: 153.3px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.7px 6.7px 6.7px 6.7px}
+    td.td13 {width: 74.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.7px 6.7px 6.7px 6.7px}
+    td.td14 {width: 169.9px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.7px 6.7px 6.7px 6.7px}
+    td.td15 {width: 375.6px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.7px 6.7px 6.7px 6.7px}
+    ul.ul1 {list-style-type: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"><b>JMQT Version 1.0 Specifications</b></span></p>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff"><span class="s1">Table of Contents</span></h1>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1"><b>1. What is JMQT (JSON Message Queueing and Transfer) ?        1</b></span></p>
+<p class="p4"><span class="s1"><b>2. Purpose of this document        2</b></span></p>
+<p class="p4"><span class="s1"><b>3. Terminology        2</b></span></p>
+<p class="p4"><span class="s1"><b>4. Version History        3</b></span></p>
+<p class="p4"><span class="s1"><b>5. Protocol Overview        3</b></span></p>
+<p class="p4"><span class="s1"><b>6. Packet Types        3</b></span></p>
+<p class="p4"><span class="s1"><b>7. Packet Structure        4</b></span></p>
+<p class="p5"><span class="s1">a. Auth Packet        4</span></p>
+<p class="p5"><span class="s1">b. Auth Acknowledgement        4</span></p>
+<p class="p5"><span class="s1">c. Connect Packet        5</span></p>
+<p class="p5"><span class="s1">d. Connect Acknowledgement        5</span></p>
+<p class="p5"><span class="s1">e. Heartbeat Packet        6</span></p>
+<p class="p5"><span class="s1">f. Heartbeat Acknowledgement        6</span></p>
+<p class="p5"><span class="s1">g. Subscribe Packet        7</span></p>
+<p class="p5"><span class="s1">h. Subscribe Acknowledgement        7</span></p>
+<p class="p5"><span class="s1">i. Unsubscribe Packet        8</span></p>
+<p class="p5"><span class="s1">j. Unsubscribe Acknowledgement        8</span></p>
+<p class="p5"><span class="s1">k. Publish Packet        9</span></p>
+<p class="p5"><span class="s1">l. Publish Acknowledgment        9</span></p>
+<p class="p5"><span class="s1">m. Push Packet        10</span></p>
+<p class="p5"><span class="s1">n. Push Acknowledgment        11</span></p>
+<p class="p5"><span class="s1">o. Disconnection Packet        11</span></p>
+<p class="p4"><span class="s1"><b>8. Status Codes        12</b></span></p>
+<p class="p4"><span class="s1"><b>9. Operational Behaviour        12</b></span></p>
+<p class="p5"><span class="s1">a. Quality of Service        12</span></p>
+<p class="p5"><span class="s1">b. Retained Packets        13</span></p>
+<p class="p5"><span class="s1">c. Persistent Subscription        13</span></p>
+<p class="p5"><span class="s1">d. P2P and Control Packets        14</span></p>
+<p class="p5"><span class="s1">e. Server side Sub, Unsub and Push        15</span></p>
+<p class="p5"><span class="s1">f. Disconnection behaviour        15</span></p>
+<p class="p4"><span class="s1"><b>10. Authentication and security        16</b></span></p>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff; min-height: 21.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff"><span class="s1">1. What is JMQT (JSON Message Queueing and Transfer) ?</span></h1>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">JMQT is a </span><span class="s2">publish-subscribe based IoT and messaging protocol</span><span class="s1">, which works on top of TCP/IP. It is a </span><span class="s2">text based protocol</span><span class="s1">, where the packets are build in </span><span class="s2">JSON</span><span class="s1"> (JavaScript Object Notation) format and converted into text.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">JMQT has been primarily developed for IoT and messaging applications, where multiple clients are connected to a server in order to exchange messages between them. JMQT also supports P2P (Point to Point) messaging in addition to publish-subscribe operations. </span><span class="s2">JMQT</span><span class="s1"> protocol is </span><span class="s2">open &amp; free</span><span class="s1">, and anyone can </span><span class="s2">use</span><span class="s1"> this protocol </span><span class="s2">without any license agreement</span><span class="s1">.</span></p>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff; min-height: 21.0px"><span class="s1"><b></b></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff"><span class="s1">2. Purpose of this document</span></h1>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">This document covers the specifications of JMQT protocol version 1.0. The primary purpose of this document is to define the principles of the JMQT protocol 1.0 along with sample packets and operational behaviour.<span class="Apple-converted-space"> </span></span></p>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff; min-height: 21.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff"><span class="s1">3. Terminology</span></h1>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this specification are to be interpreted as described in IETF RFC 2119 <a href="https://www.google.com/url?q=https://www.ietf.org/rfc/rfc2119.txt&amp;sa=D&amp;ust=1543918069922000"><span class="s3">[RFC2119]</span></a>.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Socket:</span></p>
+<p class="p7"><span class="s1">Standard socket connection over TCP/IP as defined in IETF RFC 147 [<a href="https://www.google.com/url?q=https://tools.ietf.org/html/rfc147&amp;sa=D&amp;ust=1543918069923000"><span class="s3">RCF147</span></a>].</span></p>
+<p class="p7"><span class="s2">WebSocket:</span></p>
+<p class="p7"><span class="s1">Standard WebSocket connection over TCP/IP as defined in IETF RFC 6455 [<a href="https://www.google.com/url?q=https://tools.ietf.org/html/rfc6455&amp;sa=D&amp;ust=1543918069923000"><span class="s3">RFC6455</span></a>].</span></p>
+<p class="p7"><span class="s2">JSON:</span></p>
+<p class="p7"><span class="s1">Javascript Object Notation as defined in IETF RFC 7159 [<a href="https://www.google.com/url?q=https://tools.ietf.org/html/rfc7159&amp;sa=D&amp;ust=1543918069924000"><span class="s3">RFC7159</span></a>].<span class="Apple-converted-space"> </span></span></p>
+<p class="p7"><span class="s2">Client:</span></p>
+<p class="p7"><span class="s1">A program or device that uses JMQT. A Client always establishes the Network Connection to the Server. It can</span></p>
+<ul class="ul1">
+  <li class="li7"><span class="s4"></span><span class="s1">Publish Packets that other Clients might be interested in.</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Subscribe to request Packets that it is interested in receiving.</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Unsubscribe to remove a request for Packets.</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Disconnect from the Server.</span></li>
+</ul>
+<p class="p7"><span class="s2">Server:</span></p>
+<p class="p7"><span class="s1">A program or device that acts as an intermediary between Clients which publish packets and Clients which have made Subscriptions. A Server</span></p>
+<ul class="ul1">
+  <li class="li7"><span class="s4"></span><span class="s1">Accepts Network Connections from Clients.</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Accepts Packets published by Clients.</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Processes Subscribe and Unsubscribe requests from Clients.</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Forwards Packets that match Client Subscriptions.</span></li>
+</ul>
+<p class="p7"><span class="s2">Subscription:</span></p>
+<p class="p7"><span class="s1">A Subscription comprises a Channel Name and a maximum QOS (see </span><span class="s5">section 9.a</span><span class="s1"> for QOS). A Subscription can associated with a single Session or can be persistent depending on the Persistence Flag (see</span><span class="s5"> section 9.c</span><span class="s1">). A Session can contain more than one Subscription. Each Subscription within a session has a different Channel Name.</span></p>
+<p class="p7"><span class="s2">Channel Name:</span></p>
+<p class="p7"><span class="s1">The label attached to a packet which is matched against the Subscriptions known to the Server. The Server sends a copy of the published packet to each Client that has a matching Subscription.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Session:</span></p>
+<p class="p7"><span class="s1">A stateful interaction between a Client and a Server. Some Sessions last only as long as the Network Connection, others can span multiple consecutive Network Connections between a Client and a Server.</span></p>
+<p class="p7"><span class="s2">JMQT Packet:</span></p>
+<p class="p7"><span class="s1">A packet of information containing JSON data that is sent across the Network Connection. The JMQT specification defines fifteen different types of Packet, one of which (the Publish packet) is used to convey messages.</span></p>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff; min-height: 21.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff"><span class="s1">4. Version History</span></h1>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p8"><span class="s1">Date</span></p>
+      </td>
+      <td valign="top" class="td2">
+        <p class="p8"><span class="s1">Description</span></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p8"><span class="s1">Prepared By</span></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p8"><span class="s1">Remarks</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p8"><span class="s1">3 Dec 2018</span></p>
+      </td>
+      <td valign="top" class="td2">
+        <p class="p8"><span class="s1">Initial Document Preparation</span></p>
+      </td>
+      <td valign="top" class="td3">
+        <p class="p8"><span class="s1">Shubhadeep Banerjee</span></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p8"><span class="s1">Defining JMQT 1.0</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><span class="s1"></span><br></p>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff; min-height: 21.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff"><span class="s1">5. Protocol Overview</span></h1>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">JMQT consists of clients communicating to a server, primarily using </span><span class="s2">Socket (or Web Socket)</span><span class="s1"> connection. A client may be either a publisher or a subscriber.<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">JMQT is built on the concept of </span><span class="s2">Channels</span><span class="s1">, which are used by the publishers to </span><span class="s2">send</span><span class="s1"> messages, and are used by the subscribers to </span><span class="s2">receive</span><span class="s1"> messages. When a publisher has a new message to distribute, it sends a </span><span class="s2">‘publish’</span><span class="s1"> packet to the server with the channel name and the message. The server then distributes the message among the subscribers of that particular channel  by sending the </span><span class="s2">‘push’</span><span class="s1"> packets.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">If the server receives a publish packet to a channel which has no current subscribers, it discards the message unless the publisher indicates that the message is to be retained (see </span><span class="s5">section 9.b</span><span class="s1"> for retained packets). When a new subscriber subscribes to that channel (by sending a </span><span class="s2">‘subscribe’</span><span class="s1"> packet), the </span><span class="s2">retained</span><span class="s1"> message for that channel is sent to the subscriber allowing the new subscriber to receive the most current message of that channel rather than waiting for the next update from a publisher.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">There are two special types of channels available in JMQT, </span><span class="s2">Control channels</span><span class="s1"> and </span><span class="s2">P2P channels</span><span class="s1">. For details on P2P and control packets, see </span><span class="s5">section 9.d</span><span class="s1">.</span></p>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff; min-height: 21.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff"><span class="s1">6. Packet Types</span></h1>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">JMQT protocol has the following packet types :</span></p>
+<ul class="ul1">
+  <li class="li7"><span class="s4"></span><span class="s1">Auth (sent by the client to receive authentication token and client id)</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Auth Acknowledgment (authentication status, token and client id sent back by the server)</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Connect (sent by the client to establish a session, contains authentication token and client id)</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Connect Acknowledgment (connection status sent back by the server)</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Heartbeat (sent by the client in regular intervals to inform the server about its availability)</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Heartbeat Acknowledgment (sent by the server to indicate that it is receiving the heartbeats)</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Subscribe (sent by the client to subscribe to a channel)</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Subscribe Acknowledgment (subscription status sent back by the server)</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Unsubscribe (sent by the client to unsubscribe to a channel)</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Unsubscribe Acknowledgment (unsubscription status sent back by the server)</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Publish (sent by the client to publish a message to a channel)</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Publish Acknowledgment (publish status sent back by the server, this message is option depending on the QOS)</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Push (sent by the server to distribute a published message)</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Push Acknowledgment (sent back by the client to indicate that it has received the push packet, this message is optional depending on the QOS)</span></li>
+  <li class="li7"><span class="s4"></span><span class="s1">Disconnect (sent by the client to indicate that the client is willingly disconnecting the server)</span></li>
+</ul>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff; min-height: 21.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff"><span class="s1">7. Packet Structure</span></h1>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">JMQT packets are JSON packets with the </span><span class="s2">root element</span><span class="s1"> of the packet indicating the </span><span class="s2">packet type</span><span class="s1">, i.e. the packets look like the following :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{ &lt;packet type&gt; : {&lt;packet data in JSON&gt;}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">Any kind of data transferred in a packet can be a JSON object or a plain string, depending on the business logic of the system. Any </span><span class="s2">acknowledgement</span><span class="s1"> packet generated from the server contains a </span><span class="s2">status code</span><span class="s1"> (see </span><span class="s5">section 8</span><span class="s1"> for the details on the JMQT status codes) which indicates the status of the action requested by the client.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">Below is the detailed description of each of the packet types mentioned in </span><span class="s5">section 6</span><span class="s1"> with example packets indicating the real-life scenarios :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">a. Auth Packet</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">Auth packets are </span><span class="s2">sent by the client</span><span class="s1"> to the server to </span><span class="s2">authenticate</span><span class="s1"> itself and get an authentication token for future communication. Auth packets contain the </span><span class="s2">authentication information</span><span class="s1"> as a JSON object or a string. Auth packets can be used for login or registration in web based applications, registration of the client using IMEI or mac no., and so on.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Packet type code :</span><span class="s1"> auth</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Parameters :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p8"><span class="s1"><b>Parameter</b></span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p8"><span class="s1"><b>Key</b></span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p8"><span class="s1"><b>Type</b></span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p8"><span class="s1"><b>Required</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p8"><span class="s1">Auth Data</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p8"><span class="s1">dt</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p8"><span class="s1">JSON / String</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p8"><span class="s1">Yes</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Sample Packets :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">1. Sample login :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"auth":{"dt":{"login":{"email":"email@example.com","password":"my password"}}}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">2. Sample device registration using IMEI:</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"auth":{"dt":{"IMEI":"xxxxxxxxxxxxxxx"}}}</span></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff; min-height: 19.0px"><span class="s1"><b></b></span><br></h2>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">b. Auth Acknowledgement</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Server MUST validate</span><span class="s1"> an </span><span class="s2">auth</span><span class="s1"> packet and </span><span class="s2">acknowledge</span><span class="s1"> to the client with an </span><span class="s2">Auth Ack</span><span class="s1"> packet. This auth ack packet contains a </span><span class="s2">status code</span><span class="s1"> which denotes the status of the auth request (for details on status code see</span><span class="s5"> section 8</span><span class="s1">), an </span><span class="s2">optional authentication token &amp; client id</span><span class="s1"> (if the authentication is successful), and an </span><span class="s2">optional message</span><span class="s1"> (mentioning the reason in case the authentication is unsuccessful). If the authentication is successful, the client will use the client id and auth token to send the connect packet to the server.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Packet type code :</span><span class="s1"> authAck</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Parameters :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td9">
+        <p class="p4"><span class="s1"><b>Parameter</b></span></p>
+      </td>
+      <td valign="top" class="td10">
+        <p class="p4"><span class="s1"><b>Key</b></span></p>
+      </td>
+      <td valign="top" class="td11">
+        <p class="p4"><span class="s1"><b>Type</b></span></p>
+      </td>
+      <td valign="top" class="td12">
+        <p class="p4"><span class="s1"><b>Required</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td9">
+        <p class="p4"><span class="s1">Status Code</span></p>
+      </td>
+      <td valign="top" class="td10">
+        <p class="p4"><span class="s1">st</span></p>
+      </td>
+      <td valign="top" class="td11">
+        <p class="p4"><span class="s1">Integer</span></p>
+      </td>
+      <td valign="top" class="td12">
+        <p class="p4"><span class="s1">Yes</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td9">
+        <p class="p4"><span class="s1">Auth Token</span></p>
+      </td>
+      <td valign="top" class="td10">
+        <p class="p4"><span class="s1">at</span></p>
+      </td>
+      <td valign="top" class="td11">
+        <p class="p4"><span class="s1">String</span></p>
+      </td>
+      <td valign="top" class="td12">
+        <p class="p4"><span class="s1">Yes, if Status Code is 1 (OK)</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td9">
+        <p class="p4"><span class="s1">Client ID</span></p>
+      </td>
+      <td valign="top" class="td10">
+        <p class="p4"><span class="s1">cl</span></p>
+      </td>
+      <td valign="top" class="td11">
+        <p class="p4"><span class="s1">String</span></p>
+      </td>
+      <td valign="top" class="td12">
+        <p class="p4"><span class="s1">Yes, if Status Code is 1 (OK)</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td9">
+        <p class="p4"><span class="s1">Message</span></p>
+      </td>
+      <td valign="top" class="td10">
+        <p class="p4"><span class="s1">mg</span></p>
+      </td>
+      <td valign="top" class="td11">
+        <p class="p4"><span class="s1">String</span></p>
+      </td>
+      <td valign="top" class="td12">
+        <p class="p4"><span class="s1">Yes, if Status Code is not 1 (OK)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Sample Packets :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">1. Status code 1 (OK) :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"authAck":{"st":1,"at":"my token","cl":"client 1"}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">2. Status code 0 (FAILED) :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"authAck":{"st":0,"mg":"Email and/or password not valid"}}</span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">c. Connect Packet</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">Connect packets are </span><span class="s2">sent by the client</span><span class="s1"> to the server to </span><span class="s2">establish</span><span class="s1"> a JMQT </span><span class="s2">session</span><span class="s1">. </span><span class="s2">Only</span><span class="s1"> the </span><span class="s2">connected clients with established session</span><span class="s1"> can </span><span class="s2">perform</span><span class="s1"> the JMQT operations like </span><span class="s2">publish</span><span class="s1">, </span><span class="s2">subscribe</span><span class="s1">, </span><span class="s2">unsubscribe</span><span class="s1"> and </span><span class="s2">receive push packets</span><span class="s1"> from the server. A connect packet contains the </span><span class="s2">client id and auth token</span><span class="s1"> which the client may receive from the server in the auth acknowledgement or can be preset into the client program. A connect packet is followed by a connect ack generated by the server accepting or declining the session request.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Packet type code :</span><span class="s1"> conn</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Parameters :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1"><b>Parameter</b></span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1"><b>Key</b></span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1"><b>Type</b></span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1"><b>Required</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Auth Token</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">at</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">String</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Client ID</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">cl</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">String</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Sample Packets :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"conn":{"at":"my token","cl":"client 1"}}</span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">d. Connect Acknowledgement</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Server responds</span><span class="s1"> to a </span><span class="s2">connect</span><span class="s1"> packet by sending a </span><span class="s2">connect ack</span><span class="s1">. The connect ack notifies the client that the server has accepted the session request or not. The server MUST validate the auth token and client id sent by the client and return an appropriate </span><span class="s2">status code</span><span class="s1"> along with the </span><span class="s2">timeout seconds</span><span class="s1"> (no of seconds the server will wait before closing an idle connection) in the connect ack.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Packet type code :</span><span class="s1"> connAck</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Parameters :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td9">
+        <p class="p4"><span class="s1"><b>Parameter</b></span></p>
+      </td>
+      <td valign="top" class="td10">
+        <p class="p4"><span class="s1"><b>Key</b></span></p>
+      </td>
+      <td valign="top" class="td11">
+        <p class="p4"><span class="s1"><b>Type</b></span></p>
+      </td>
+      <td valign="top" class="td12">
+        <p class="p4"><span class="s1"><b>Required</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td9">
+        <p class="p4"><span class="s1">Status Code</span></p>
+      </td>
+      <td valign="top" class="td10">
+        <p class="p4"><span class="s1">st</span></p>
+      </td>
+      <td valign="top" class="td11">
+        <p class="p4"><span class="s1">Integer</span></p>
+      </td>
+      <td valign="top" class="td12">
+        <p class="p4"><span class="s1">Yes</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td9">
+        <p class="p4"><span class="s1">Timeout Seconds</span></p>
+      </td>
+      <td valign="top" class="td10">
+        <p class="p4"><span class="s1">ts</span></p>
+      </td>
+      <td valign="top" class="td11">
+        <p class="p4"><span class="s1">Integer</span></p>
+      </td>
+      <td valign="top" class="td12">
+        <p class="p4"><span class="s1">Yes, if Status Code is 1 (OK)</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Sample Packets :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">1. Status code 1 (OK) :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"connAck": {"st": 1, "ts": 15}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">2. Status code 0 (FAILED) :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"connAck": {"st": 0}}</span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">e. Heartbeat Packet</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">Once a session is established, the clients MUST send </span><span class="s2">periodical heartbeat</span><span class="s1"> within the </span><span class="s2">timeout seconds</span><span class="s1"> specified by the server in the </span><span class="s2">connect ack</span><span class="s1">. The heartbeat contains </span><span class="s2">no data</span><span class="s1"> and just notifies the server that the client is online and active. The server shall close a session if the client does not send heartbeat packets for the timeout seconds. A client MUST send the heartbeats throughout an active session.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Packet type code :</span><span class="s1"> hb</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Parameters :</span><span class="s1"> No parameters</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Sample Packets :</span><span class="s1"> </span><span class="s6">{"hb":{}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">f. Heartbeat Acknowledgement</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Server MUST respond</span><span class="s1"> to the </span><span class="s2">heartbeats</span><span class="s1"> received from the connected clients with the </span><span class="s2">heartbeat ack</span><span class="s1">. The heartbeat ack notifies the client that the server is receiving its heartbeats and is online. The server </span><span class="s2">MUST not respond</span><span class="s1"> to any heartbeat packets if the </span><span class="s2">client has not established the session</span><span class="s1"> yet by sending the Connection Packet or t</span><span class="s2">he session has been closed</span><span class="s1">.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Packet type code :</span><span class="s1"> hbAck</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Parameters :</span><span class="s1"> No parameters</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Sample Packets :</span><span class="s1"> </span><span class="s6">{"hbAck":{}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">g. Subscribe Packet</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Clients generate</span><span class="s1"> subscribe packets and send to the server to </span><span class="s2">subscribe</span><span class="s1"> to a particular </span><span class="s2">channel</span><span class="s1">. The subscribe requests MUST be validated by the server and it sends back a status code notifying that the subscription has been successful or not.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">The subscribe packets also contains a </span><span class="s2">flag</span><span class="s1"> notifying the </span><span class="s2">persistence</span><span class="s1"> of the subscription. See </span><span class="s5">section 9.c </span><span class="s1">for the details of persistence subscription.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">Subscription to </span><span class="s2">control</span><span class="s1"> channels and </span><span class="s2">P2P</span><span class="s1"> channels are </span><span class="s2">not allowed</span><span class="s1"> (see </span><span class="s5">section 9.d</span><span class="s1"> for details).</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Packet type code :</span><span class="s1"> sub</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Parameters :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1"><b>Parameter</b></span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1"><b>Key</b></span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1"><b>Type</b></span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1"><b>Required</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Channel Name</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">cn</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">String</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Persistence Flag</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">pr</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">Bit (0 or 1)</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">No, default is 0</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Sample Packets :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">1. No persistent flag (default) :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"sub":{"cn":"my channel"}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">2. Persistent flag on :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"sub":{"cn":"my channel","pr":1}}</span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">h. Subscribe Acknowledgement</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">The subscribe requests are </span><span class="s2">validated</span><span class="s1"> by the server and it acknowledges with a </span><span class="s2">status code</span><span class="s1"> and the </span><span class="s2">channel name</span><span class="s1"> notifying that the subscription has been successful or not.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Packet type code :</span><span class="s1"> subAck</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Parameters :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1"><b>Parameter</b></span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1"><b>Key</b></span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1"><b>Type</b></span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1"><b>Required</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Channel Name</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">cn</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">String</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Status Code</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">st</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">Int</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Sample Packets :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">1. Status code 1 (OK) :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"subAck": {"st": 1, "cn": "my channel"}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">2. Status code 0 (FAILED) :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"subAck": {"st": 0, "cn": "my channel"}}</span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">i. Unsubscribe Packet</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Clients generate</span><span class="s1"> unsubscribe packets and send to the server to </span><span class="s2">unsubscribe</span><span class="s1"> to a </span><span class="s2">subscribed</span><span class="s1"> </span><span class="s2">channel</span><span class="s1">. The unsubscribe requests </span><span class="s2">may be validated</span><span class="s1"> by the server, </span><span class="s2">depending on the implementation</span><span class="s1">, though it is </span><span class="s2">not mandatory</span><span class="s1">. Unsubscribing means that the </span><span class="s2">client won’t get any push messages published to that particular channel</span><span class="s1">. If the client sends an unsubscription request to a channel which the client is not subscribed to, the server may or may not send an error code (status code other than OK) depending on the server implementation.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Packet type code :</span><span class="s1"> sub</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Parameters :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1"><b>Parameter</b></span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1"><b>Key</b></span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1"><b>Type</b></span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1"><b>Required</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Channel Name</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">cn</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">String</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Sample Packets :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"unsub":{"cn":"my channel"}}</span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">j. Unsubscribe Acknowledgement</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">The unsubscribe requests are </span><span class="s2">acknowledged</span><span class="s1"> by the server with a </span><span class="s2">status code</span><span class="s1"> and the </span><span class="s2">channel name</span><span class="s1"> notifying that the unsubscription has been successful or not. The unsubscribe requests </span><span class="s2">may be validated</span><span class="s1"> by the server, depending on the implementation, though it is </span><span class="s2">not mandatory</span><span class="s1">.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Packet type code :</span><span class="s1"> unsubAck</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Parameters :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1"><b>Parameter</b></span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1"><b>Key</b></span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1"><b>Type</b></span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1"><b>Required</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Channel Name</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">cn</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">String</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Status Code</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">st</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">Int</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Sample Packets :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">1. Status code 1 (OK) :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"unsubAck": {"st": 1, "cn": "my channel"}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">2. Status code 0 (FAILED) :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"unsubAck": {"st": 0, "cn": "my channel"}}</span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">k. Publish Packet</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Clients </span><span class="s1">send publish packet to the server to </span><span class="s2">publish a message (or data) to a channel</span><span class="s1">. The data can be a </span><span class="s2">JSON object or a String</span><span class="s1">. A publish packet contains the channel and data, an optional QOS (for details see </span><span class="s5">section 9.a</span><span class="s1">), optional packet id (if QOS is set to 0) and an optional retained flag (see </span><span class="s5">section 9.b</span><span class="s1"> for details).<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Packet type code :</span><span class="s1"> pub</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Parameters :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1"><b>Parameter</b></span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1"><b>Key</b></span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1"><b>Type</b></span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1"><b>Required</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Channel Name</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">cn</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">String</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Data</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">dt</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">JSON or String</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">QOS</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">q</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">Int</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">No, default is 0</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Packet Id</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">id</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">String</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes, if QOS is 1</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Retained Flag</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">rt</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">Bit (0 or 1)</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">No, default is 0</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Sample Packets :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">1. Basic publish packet with string data (QOS 0, Retained flag off) :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"pub":{"cn":"my channel","dt":"my message"}}</span></p>
+<p class="p7"><span class="s1">2. Basic publish packet with JSON data (QOS 0, Retained flag off) :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"pub":{"cn":"my channel","dt":{"msg": "my message"}}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">3. Publish packet with QOS 1, Retained flag off :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"pub":{"cn":"my channel","dt":"my message","q":1,"id":"4"}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">4. Publish packet with QOS 1, Retained flag on :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"pub":{"cn":"my channel","dt":"my message","q":1,"id":"4","rt":1}}</span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">l. Publish Acknowledgment</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">If the </span><span class="s2">QOS</span><span class="s1"> of a </span><span class="s2">publish</span><span class="s1"> packet is set to </span><span class="s2">1</span><span class="s1">, the server MUST send a </span><span class="s2">publish acknowledgement </span><span class="s1">to the client. The server validates the publish packets and if the QOS is 1, it responds with a </span><span class="s2">status code</span><span class="s1"> and the </span><span class="s2">packet id</span><span class="s1"> sent by the client. The </span><span class="s2">server may decline a publish request</span><span class="s1"> based on the business logic. If the </span><span class="s2">client does not receive the acknowledgement</span><span class="s1"> of a QOS 1 packet, the client may </span><span class="s2">retry</span><span class="s1"> sending the packet using the same packet id.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Packet type code :</span><span class="s1"> pubAck</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Parameters :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1"><b>Parameter</b></span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1"><b>Key</b></span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1"><b>Type</b></span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1"><b>Required</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Status Code</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">st</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">Int</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Packet Id</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">id</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">String</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes, if QOS is 1</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Sample Packets :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">1. Status code 1 (OK) :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"pubAck": {"st": 1, "id": "4"}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">2. Status code 0 (FAILED) :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"pubAck": {"st": 0, "id": "4"}}</span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">m. Push Packet</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">When a client sends</span><span class="s1"> a </span><span class="s2">publish</span><span class="s1"> packet to the server, the server </span><span class="s2">distributes</span><span class="s1"> the data to the </span><span class="s2">subscribed clients of the published channel</span><span class="s1"> using a </span><span class="s2">push</span><span class="s1"> packet. The push packets </span><span class="s2">look similar</span><span class="s1"> to the </span><span class="s2">publish</span><span class="s1"> packets, but it is </span><span class="s2">sent from the server to the clients</span><span class="s1">. The </span><span class="s2">QOS</span><span class="s1"> of the publish packet is </span><span class="s2">replicated</span><span class="s1"> in the push packet. The</span><span class="s2"> packet id</span><span class="s1"> of the push packets are </span><span class="s2">maintained</span><span class="s1"> by the server. Push packets contain the </span><span class="s2">source client id</span><span class="s1"> of the message, and if the </span><span class="s2">message</span><span class="s1"> is generated </span><span class="s2">by the server</span><span class="s1">, then the </span><span class="s2">client id</span><span class="s1"> field is left </span><span class="s2">blank</span><span class="s1"> (see </span><span class="s5">section 9.e</span><span class="s1"> for details). The server </span><span class="s2">may decide to store</span><span class="s1"> a push packet depending on the QOS and retained flag (see </span><span class="s5">section 9.a</span><span class="s1"> and </span><span class="s5">9.b</span><span class="s1">). If the message is a retained message, the retained flag will be sent ‘on’ or 1. Retained messages MUST not contain any packet id.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Packet type code :</span><span class="s1"> push</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Parameters :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1"><b>Parameter</b></span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1"><b>Key</b></span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1"><b>Type</b></span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1"><b>Required</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Channel Name</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">cn</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">String</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Data</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">dt</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">JSON or String</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Source Client Id</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">cl</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">String</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes, can be empty</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">QOS</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">q</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">Int</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">No, default is 0</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Packet Id</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">id</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">String</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes, if QOS is 1</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Retained Flag</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">rt</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">Bit (0 or 1)</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">No, default is 0</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Sample Packets :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">1. Basic push packet with String data (QOS 0, Retained flag off) :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"push":{"cn":"my channel","dt":"my message","cl":"client 1"}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">2. Basic push packet with JSON data (QOS 0, Retained flag off) :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"push":{"cn":"my channel","dt":{"msg": "my message"},"cl":"client 1"}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">3. Push packet with QOS 1, Retained flag off :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"push":{"cn":"my channel","dt":"my message","cl":"client 1","q":1,"id":"400"}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">4. Push packet with Retained flag on :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"push":{"cn":"my channel","dt":"my message","cl":"client 1","rt":1}}</span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">n. Push Acknowledgment</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">If the </span><span class="s2">QOS</span><span class="s1"> of a </span><span class="s2">push</span><span class="s1"> packet is set to </span><span class="s2">1</span><span class="s1">, the client MUST send a </span><span class="s2">push acknowledgement </span><span class="s1">to the server. The push a</span><span class="s2">ck looks similar to the publish ack</span><span class="s1">. If the </span><span class="s2">server does not receive a push ack</span><span class="s1">, it MUST </span><span class="s2">store the packet</span><span class="s1"> in some permanent storage and </span><span class="s2">retry sending it </span><span class="s1">when the client reconnects. Push ack for the retain packets are not required.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Packet type code :</span><span class="s1"> pushAck</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Parameters :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1"><b>Parameter</b></span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1"><b>Key</b></span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1"><b>Type</b></span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1"><b>Required</b></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Status Code</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">st</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">Int</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p4"><span class="s1">Packet Id</span></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p4"><span class="s1">id</span></p>
+      </td>
+      <td valign="top" class="td7">
+        <p class="p4"><span class="s1">String</span></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p4"><span class="s1">Yes, if QOS is 1</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Sample Packets :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"pushAck": {"st": 1, "id": "400"}}</span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">o. Disconnection Packet</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">If a client </span><span class="s2">willingly closes a session</span><span class="s1">, it MUST send a </span><span class="s2">disconnect packet</span><span class="s1"> to the server before the disconnection. It </span><span class="s2">notifies</span><span class="s1"> the server that the client connection is </span><span class="s2">not being closed abruptly</span><span class="s1"> (due to network problem or some other technical problem). The server may clear the cache and buffer allocated for the client depending on the server implementation. The disconnect packet </span><span class="s2">does not contain any data</span><span class="s1"> inside its body. Any non-persistent subscription (refer to </span><span class="s5">section 9.c</span><span class="s1">) will be removed from the server after the client sends a disconnection packet.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Packet type code :</span><span class="s1"> disconn</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Parameters :</span><span class="s1"> No parameters</span></p>
+<p class="p7"><span class="s2">Sample Packets :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"disconn":{}}</span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff"><span class="s1">8. Status Codes</span></h1>
+<p class="p7"><span class="s1">JMQT status code is a integer indicating the status of a request. The server sends status code with every acknowledgement against a request generated by the client. The JMQT client also sends a status code against the push packets sent by the server.<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">JMQT status code are listed below -</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td13">
+        <p class="p8"><span class="s1">1</span></p>
+      </td>
+      <td valign="top" class="td14">
+        <p class="p8"><span class="s1">OK</span></p>
+      </td>
+      <td valign="top" class="td15">
+        <p class="p7"><span class="s1">The requested action has been successfully completed by the server</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td13">
+        <p class="p8"><span class="s1">0</span></p>
+      </td>
+      <td valign="top" class="td14">
+        <p class="p8"><span class="s1">FAILED</span></p>
+      </td>
+      <td valign="top" class="td15">
+        <p class="p7"><span class="s1">The server has failed to perform the requested task</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td13">
+        <p class="p8"><span class="s1">5</span></p>
+      </td>
+      <td valign="top" class="td14">
+        <p class="p8"><span class="s1">SERVER ERROR</span></p>
+      </td>
+      <td valign="top" class="td15">
+        <p class="p7"><span class="s1">Notifies that the server has encountered an error</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td13">
+        <p class="p8"><span class="s1">6</span></p>
+      </td>
+      <td valign="top" class="td14">
+        <p class="p8"><span class="s1">INVALID TOKEN</span></p>
+      </td>
+      <td valign="top" class="td15">
+        <p class="p7"><span class="s1">The token passed in ‘Conn’ packet is invalid</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td13">
+        <p class="p8"><span class="s1">7</span></p>
+      </td>
+      <td valign="top" class="td14">
+        <p class="p8"><span class="s1">NOT ALLOWED</span></p>
+      </td>
+      <td valign="top" class="td15">
+        <p class="p7"><span class="s1">The client is not allowed to perform the specific task</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td13">
+        <p class="p8"><span class="s1">8</span></p>
+      </td>
+      <td valign="top" class="td14">
+        <p class="p8"><span class="s1">CLIENT OFFLINE</span></p>
+      </td>
+      <td valign="top" class="td15">
+        <p class="p7"><span class="s1">Special response code for P2P messages notifying that the destination client is offline.</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td13">
+        <p class="p8"><span class="s1">10</span></p>
+      </td>
+      <td valign="top" class="td14">
+        <p class="p8"><span class="s1">INVALID PACKET</span></p>
+      </td>
+      <td valign="top" class="td15">
+        <p class="p7"><span class="s1">The request packet is malformed</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td13">
+        <p class="p8"><span class="s1">11</span></p>
+      </td>
+      <td valign="top" class="td14">
+        <p class="p7"><span class="s1">INVALID CHANNEL</span></p>
+      </td>
+      <td valign="top" class="td15">
+        <p class="p7"><span class="s1">The channel is invalid. e.g. subscribing or unsubscribing to a control or P2P channel</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td13">
+        <p class="p8"><span class="s1">9</span></p>
+      </td>
+      <td valign="top" class="td14">
+        <p class="p8"><span class="s1">NETWORK ERROR</span></p>
+      </td>
+      <td valign="top" class="td15">
+        <p class="p7"><span class="s1">Client program shall generate this error code if the client is unable to connect the server</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff; min-height: 21.0px"><span class="s1"></span><br></h1>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff"><span class="s1">9. Operational Behaviour</span></h1>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">a. Quality of Service</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">JMQT has a concept of </span><span class="s2">QOS</span><span class="s1"> (Quality of Service). Depending on the QOS, the </span><span class="s2">server</span><span class="s1"> </span><span class="s2">may or may not store and acknowledge</span><span class="s1"> to a </span><span class="s2">‘publish’</span><span class="s1"> packet, and the </span><span class="s2">client</span><span class="s1"> </span><span class="s2">may or may not acknowledge</span><span class="s1"> to a </span><span class="s2">‘push’</span><span class="s1"> packet. The QOS can either be 0 or 1. The ‘q’ key in a publish packet denotes the QOS. If </span><span class="s2">no QOS is mentioned</span><span class="s1"> in a packet, i.e. the ‘q’ key is not set, the server MUST </span><span class="s2">consider the QOS as 0</span><span class="s1">. If QOS is set to 1, the client MUST include a packet id (‘id’ key) in the publish packet.<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">Example :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">1. Default QOS (QOS 0) :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"pub":{"cn":"my channel","dt":"my message"}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">2. QOS 1 :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"pub":{"cn":"my channel","dt":"my message","q":1,"id":"1"}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">If the </span><span class="s2">QOS</span><span class="s1"> is set to </span><span class="s2">‘0’</span><span class="s1"> in a publish packet, the server will </span><span class="s2">distribute</span><span class="s1"> the message (by sending </span><span class="s2">push</span><span class="s1"> packets which also have the </span><span class="s2">QOS</span><span class="s1"> set to </span><span class="s2">‘0</span><span class="s1">’) among the </span><span class="s2">connected</span><span class="s1"> clients which are </span><span class="s2">subscribed</span><span class="s1"> to the channel and will </span><span class="s2">forget</span><span class="s1"> the packet. This means, </span><span class="s2">no offline subscriber</span><span class="s1"> will </span><span class="s2">receive</span><span class="s1"> the message when they reconnects. The </span><span class="s2">online</span><span class="s1"> </span><span class="s2">subscribers</span><span class="s1"> who will receive the ‘push’ message from the server, </span><span class="s2">do not need to acknowledge</span><span class="s1"> if the QOS is set to ‘0’.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">Example of QOS 0 push packets:</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"push":{"cn":"my channel","dt":"my message","cl":"client id", "q":0}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">If the </span><span class="s2">QOS</span><span class="s1"> is set to </span><span class="s2">‘1’</span><span class="s1"> in a </span><span class="s2">publish</span><span class="s1"> packet, the </span><span class="s2">server</span><span class="s1"> will first </span><span class="s2">store</span><span class="s1"> the message, then it will </span><span class="s2">distribute</span><span class="s1"> the message (by sending </span><span class="s2">push</span><span class="s1"> packets with </span><span class="s2">QOS</span><span class="s1"> set to </span><span class="s2">‘1’</span><span class="s1">) among the </span><span class="s2">connected</span><span class="s1"> clients which are </span><span class="s2">subscribed</span><span class="s1"> to the channel. The </span><span class="s2">online</span><span class="s1"> </span><span class="s2">subscribers</span><span class="s1"> who will </span><span class="s2">receive</span><span class="s1"> the ‘push’ message from the server, </span><span class="s2">MUST acknowledge</span><span class="s1"> if the </span><span class="s2">QOS</span><span class="s1"> is set to</span><span class="s2"> ‘1</span><span class="s1">’. If the server </span><span class="s2">does not receive</span><span class="s1"> the push </span><span class="s2">acknowledgement</span><span class="s1"> from a client or the client is offline, it will </span><span class="s2">send</span><span class="s1"> the </span><span class="s2">stored</span><span class="s1"> message </span><span class="s2">again</span><span class="s1"> when the </span><span class="s2">client reconnects</span><span class="s1"> to the server. The QOS 1 packets may be pushed to the client </span><span class="s2">more than once</span><span class="s1"> to ensure the delivery. The </span><span class="s2">packet id </span><span class="s1">of the push packets are </span><span class="s2">generated</span><span class="s1"> by the </span><span class="s2">server</span><span class="s1"> and </span><span class="s2">independent</span><span class="s1"> to the </span><span class="s2">packet id sent by the client</span><span class="s1"> in the publish packet.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">Example of QOS 1 push packets:</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"push": {"cn":"my channel","dt":"my message","cl":"client id", "id": "1", "q": 1}}</span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">b. Retained Packets</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">The </span><span class="s2">retained</span><span class="s1"> messages are used for allowing the new subscriber to receive the </span><span class="s2">most current message of that channel</span><span class="s1"> rather than waiting for the next update from a publisher.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">Retained messages are different from the QOS. If a </span><span class="s2">channel does not have any subscribed clients</span><span class="s1">, </span><span class="s2">QOS 1</span><span class="s1"> messages are </span><span class="s2">discarded</span><span class="s1"> by the server, whereas the </span><span class="s2">retained messages</span><span class="s1"> are still </span><span class="s2">stored</span><span class="s1"> for the </span><span class="s2">future subscribers</span><span class="s1">. There can be </span><span class="s2">only one</span><span class="s1"> (the latest) </span><span class="s2">retained</span><span class="s1"> message stored in the server for a </span><span class="s2">particular channel</span><span class="s1"> at any point of time. Server MUST send the retained messages to the client in two situations : 1. When the client connects to the server and it has persistent subscriptions to a channel (see </span><span class="s5">section 9.c</span><span class="s1">). 2. When the client subscribes to a channel. The push packets MUST have the retain flag on. </span><span class="s2">Retained push packets do not have a packet id and retained flag is set to 1</span><span class="s1"> to inform the client that the packet is a retained packet. The clients </span><span class="s2">do not</span><span class="s1"> need to send </span><span class="s2">push ack</span><span class="s1"> for any retained packets. Retained packets are not available for the Control and P2P channels.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">A publish packet may have the </span><span class="s2">retained flag</span><span class="s1"> (‘rt’ key) and </span><span class="s2">QOS</span><span class="s1"> </span><span class="s2">both</span><span class="s1"> set to </span><span class="s2">1</span><span class="s1">, </span><span class="s2">either</span><span class="s1"> of them set to </span><span class="s2">1</span><span class="s1">, or </span><span class="s2">both</span><span class="s1"> set to </span><span class="s2">0</span><span class="s1">. If the </span><span class="s2">retained flag is not mentioned</span><span class="s1"> in a packet, the server MUST </span><span class="s2">consider</span><span class="s1"> the retained flag as </span><span class="s2">0 or off</span><span class="s1">.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">Example :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">1. Publish packets with retain flag on :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"pub":{"cn":"my channel","dt":"my message","rt":1}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">2. Push packets with retained messages :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"push": {"cn":"my channel","dt":"my message","cl":"client id", "rt": "1"}}</span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">c. Persistent Subscription</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">Persistent subscriptions are used to store the subscription in the server even after a client session is closed.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">The subscribe packets contains a </span><span class="s2">flag</span><span class="s1"> notifying the </span><span class="s2">persistence</span><span class="s1"> of the subscription. If the persistent </span><span class="s2">flag is on</span><span class="s1"> (i.e. 1), the server MUST </span><span class="s2">store the subscription</span><span class="s1"> even if after the </span><span class="s2">client session is closed</span><span class="s1">. If the </span><span class="s2">flag is off</span><span class="s1"> (i.e. 0), the server </span><span class="s2">will remove the subscription</span><span class="s1"> mapping when the client </span><span class="s2">disconnects</span><span class="s1">.<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">The server </span><span class="s2">MUST store all the QOS 1</span><span class="s1"> packets of the persistent </span><span class="s2">channels</span><span class="s1"> even if the </span><span class="s2">client is offline</span><span class="s1">. The server MUST </span><span class="s2">resend</span><span class="s1"> the </span><span class="s2">stored messages</span><span class="s1"> once the client reconnects and establishes a new session. Clients </span><span class="s2">do not</span><span class="s1"> need to </span><span class="s2">subscribe</span><span class="s1"> to channel </span><span class="s2">again</span><span class="s1"> if the subscription is </span><span class="s2">persistent</span><span class="s1"> until the client unsubscribes to the channel. Non-persistent subscriptions are automatically unsubscribed when the client disconnects. To </span><span class="s2">change the persistence of a subscription</span><span class="s1">, the client MUST </span><span class="s2">unsubscribe</span><span class="s1"> to the channel, and </span><span class="s2">subscribe</span><span class="s1"> it </span><span class="s2">again</span><span class="s1"> with the desired persistence flag.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">Example :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">1. Subscription with persistent flag on :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"sub":{"cn":"my channel","pr":1}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">2. Subscription with persistent flag off / default :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"sub":{"cn":"my channel","pr":0}}</span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">d. P2P and Control Packets</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">There are two </span><span class="s2">special types of channels</span><span class="s1"> available in JMQT, </span><span class="s2">control</span><span class="s1"> channels and </span><span class="s2">P2P</span><span class="s1"> channels.</span></p>
+<p class="p7"><span class="s1"> </span></p>
+<p class="p7"><span class="s1">Control channels are similar to the HTTP API calls. </span><span class="s2">Control</span><span class="s1"> channels (</span><span class="s2">starts with $</span><span class="s1">) are used to </span><span class="s2">retrieve some information from the server</span><span class="s1"> itself. Implementation of control channels is optional and server dependent. The client may publish a packet with or without data to a control channel which the server MUST process and respond to the client. Any packet published to a control channel MUST contain a packet id.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">Example of control packets:</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">Step 1. Client publishes a message to control channel (to get a list of the subscribed channels) -</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"pub":{"cn":"$mySubscriptions","dt":{},"id":"2"}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">Step 2. Server responds back with publish ack with required data (list of the subscribed channels) -</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"pubAck": {"st": 1, "id": "2", "dt": {"channels": ["my channel"]}}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">P2P</span><span class="s1"> channels (</span><span class="s2">starts with #</span><span class="s1">) are used to </span><span class="s2">send</span><span class="s1"> messages </span><span class="s2">directly</span><span class="s1"> to one client from another client. In order to send a P2P message, the sender MUST know the </span><span class="s2">P2P address</span><span class="s1"> of the receiver. P2P messaging is also optional, but it’s recommended in the applications where the clients always need to talk to each other directly (e.g. chat applications) without the need of broadcasting a message to multiple clients. The behaviour of P2P channels are just like the normal channels (i.e. it supports QOS) except the P2P channels does not support retained packets.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">Example of P2P packets:</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">1. P2P publish packet with QOS 1 -</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"pub":{"cn": "#my client 1", "dt": "my p2p message", "id": "5", "q": 1}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">2. P2P push packets -</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"push":{"cn":"#my client 1","dt":"my p2p message","cl":"my client 2","id": "401","q": 1}}</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Clients are never allowed to subscribe</span><span class="s1"> to a control channel or a P2P channel. Subscriptions to the P2P channels are controlled by the server (see </span><span class="s5">section 9.e </span><span class="s1">for details).</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">e. Server side Sub, Unsub and Push</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">JMQT protocol includes the </span><span class="s2">possibility to perform subscription and unsubscription</span><span class="s1"> </span><span class="s2">initiated by the server</span><span class="s1">.<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">When a client establishes a </span><span class="s2">new session</span><span class="s1">, the server </span><span class="s2">may make the client subscribe and/or unsubscribe</span><span class="s1"> to certain channels without the subscription and/or unsubscription request generated by the client. In case of </span><span class="s2">P2P channels</span><span class="s1">, the </span><span class="s2">subscription request should not be generated by the client</span><span class="s1">, instead the server MUST </span><span class="s2">perform the subscription to the P2P channels on behalf of the client</span><span class="s1"> when the client establishes a session. In certain applications, it is also possible that the server will completely decline any subscription or unsubscription request from the clients, and subscription or unsubscription operations will be performed by the server itself.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s2">Server can also push messages to all the available channels without having a publish packet received from a client</span><span class="s1">. This ensures that the server may push required information (such as software update notification, billing notification etc.) directly to the clients anytime the server wants. The push packets generated by the server does not have any value assigned to the source client id (the ‘cl’ key in push packets), instead the value is left empty (blank string). The QOS principle is similar to that of the normal push packets. Follow is an example of a server side QOS 1 push packet :</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p9"><span class="s1">{"push": {"cn": "server channel", "dt": "You have an update", "cl": "", "id": "402", "q": 1}}</span></p>
+<h2 style="margin: 0.0px 0.0px 13.3px 0.0px; text-align: justify; line-height: 16.0px; font: 16.0px Verdana; color: #134f5c; -webkit-text-stroke: #134f5c; background-color: #ffffff"><span class="s1">f. Disconnection behaviour</span></h2>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p13"><span class="s1">The client can disconnect the server (or end a session) in </span><span class="s2">three</span><span class="s1"> ways - </span><span class="s2">1. The client can just close the socket or websocket connection</span><span class="s1">, </span><span class="s2">2. The client may send a disconnection packet to the server</span><span class="s1">, </span><span class="s2">3. Both 1 and 2</span><span class="s1">. The </span><span class="s2">recommended</span><span class="s1"> way of disconnection is</span><span class="s2"> way no. 3</span><span class="s1">, as it ensures the server that the client is initiating the disconnection willingly and the server can clear the cache (if any) assigned to that particular session. Disconnecting the socket or websocket is also important because an unused socket or websocket connection may lead to network error in the client system.<span class="Apple-converted-space"> </span></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p13"><span class="s1">When a session is closed, the server MUST remove all non-persistent subscriptions from the disconnected client along with the QOS 1 push packets mapped for that particular client. The client SHOULD stop sending the heartbeat packets once the session is closed.</span></p>
+<h1 style="margin: 0.0px 0.0px 11.6px 0.0px; text-align: justify; line-height: 17.0px; font: 17.3px Verdana; color: #3d85c6; -webkit-text-stroke: #3d85c6; background-color: #ffffff"><span class="s1">10. Authentication and security</span></h1>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">In order to </span><span class="s2">connect</span><span class="s1"> to the server, a client MUST send a combination of </span><span class="s2">client id</span><span class="s1"> and </span><span class="s2">authentication token</span><span class="s1"> to the server. This </span><span class="s2">authentication token</span><span class="s1"> and </span><span class="s2">client id</span><span class="s1"> can be </span><span class="s2">pre-configured</span><span class="s1"> in the client, or the client can retrieve those credentials from the server by sending the Auth packet, which will contain the authentication information like user id and password.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p7"><span class="s1">JMQT </span><span class="s2">does not define</span><span class="s1"> any </span><span class="s2">built-in encryption</span><span class="s1"> protocol. However, as it uses TCP connection (</span><span class="s2">Socket</span><span class="s1"> and </span><span class="s2">WebSocket</span><span class="s1">) for communications, </span><span class="s2">TLS</span><span class="s1"> (</span><span class="s2">Transport Layer Security</span><span class="s1">) can easily be implemented on top of </span><span class="s2">socket</span><span class="s1"> and </span><span class="s2">WebSocket</span><span class="s1"> to secure the incoming and outgoing messages.</span></p>
+</body>
+</html>

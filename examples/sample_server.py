@@ -31,9 +31,11 @@ if modules_root_path not in sys.path:
     sys.path.insert(0, modules_root_path)
 from pyjmqt.server.api import Server
 
-# defines and implements the main application
+# JMQT application class defines and implements the main application
 class MyJMQTApp():
+    # constructor of the JMQT application class
     def __init__(self, loop):
+        # the eventloop passed during the object creation
         self.loop = loop
         # setup the JMQT server
         self.configFile = os.path.join(root_path, 'server.conf')
@@ -235,11 +237,16 @@ class MyJMQTApp():
         self.server.stop()
 
 if __name__ == '__main__':
+    # get the asyncio event loop
     loop = asyncio.get_event_loop()
+    # pass the loop to the app
     myApp = MyJMQTApp(loop)
+    # start the server
     myApp.start()
     try:
+        # run the loop and wait for the KeyboardInterrupt
         loop.run_forever()
     except KeyboardInterrupt:
         pass
+    # if Interrupt is received, stop the server
     myApp.stop()

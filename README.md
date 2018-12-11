@@ -9,14 +9,13 @@ This GitHub repository contains an open source implementation of the JMQT protoc
 - **pyjmqt** : Python based **JMQT server, client and load balancer** libraries
   - **server** - Libary for **JMQT server** developed using [asyncio](https://docs.python.org/3/library/asyncio.html) which supports python 3.5 or above.
   - **client** - Library for **JMQT client** which supports python 2.7 or above
-  - **load_balancer** - Library for **JMQT load blanacer** developed using [PumpkinLB](https://github.com/kata198/PumpkinLB) library
  - **jsclient** : Library for **JMQT client** developed using **Javascript** which can directly run on web browsers :
     - **jmqt-client.js** - Actual Javascript library file
  - **examples** : Example projects that use **pyjmqt** and **jsclient** libraries
     - **sample_angularjs_client** - **Browser based application** developed using [AngularJS 1.6.5](https://angularjs.org/) and **'jmqt-client.js'** to demonstrate JMQT functionalities
     - **sample_server.py** - Python (3.5 or above) based **JMQT server application** developed using **'pyjmqt.server'** library
     - **sample_client.py** - Python (2.7 or above) based **JMQT client application** developed using **'pyjmqt.client'** library
-
+    - **sample_load_balancer.py** - Python (3.5 or above) based **JMQT Load Balancer** developed using **[PumpkinLB](https://github.com/kata198/PumpkinLB)**
 ## Features
 - **pyjmqt.server** :
     1. Developed using **Python 3 asyncio** for JMQT 1.0
@@ -35,10 +34,6 @@ This GitHub repository contains an open source implementation of the JMQT protoc
     2. Supports **WebSocket**
     3. Requires **no additional** Javascript libraries
     4. Supports **any browser** with [WebSocket support](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
-- **pyjmqt.load_balancer** :
-    1. Developed using **Python 3** and [PumpkinLB](https://github.com/kata198/PumpkinLB)
-    2. **No additional package** or python **library** other than PumpkinLib is needed 
-    3. Supports **Socket** and **WebSocket** with **SSL**
 
 ## Requirements
 - **pyjmqt.server** :
@@ -50,7 +45,7 @@ This GitHub repository contains an open source implementation of the JMQT protoc
     1. **Python 2.7** or above
 - **jsclient** :
     - *No special requirements*
-- **pyjmqt.load_balancer** :
+- **load balancer** :
     1. **Python 3.5** or above (recommended 3.6 or above)
     2. Python libraries as listed in **pip_requirements/load_balancer.txt**
 
