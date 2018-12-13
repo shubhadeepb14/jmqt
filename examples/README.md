@@ -5,6 +5,13 @@ This developer guide is intended to describe the use the following libraries
 - Web browser client using **jsclient**
 - Load balancer using **[PumpkinLB](https://github.com/kata198/PumpkinLB)**
 
+## Default Ports
+Below is the list of the TCP port numbers used by the example applications (as specified in the JMQT 1.0 Specifications)
+-  8010 : Plain Socket
+-  8011 : Plain WebSocket
+-  8012 : SSL Socket
+-  8013 : SSL WebSocket
+
 ## Directory Structure
 This directory contains the sample projects which use the above libraries. 
 1. **sample_server.py** : Python 3.6 code which uses the **pyjmqt.server** library to implement a JMQT server. A .conf file is required which contains the server configuraion:
@@ -142,7 +149,7 @@ MYSQL_USER = "root"
 Distriuted environment needs a load balancer. For the guide to implement a load balancer, see section '4. load_balancer.py' of this document.
 
 ### 1.j. Enabling SSL
-To enable SSL, first we need the server side SSL key and certificate files. These files can be self prepared using OpenSSL or can be assigned by a certificate authority. To prepare own certificates, follow the instructions given in **certificates.md**. Please note, to enable SSL on WebSocket using WSS (WebSocket Secure) and release the application for global use, the certificates must be retrived from a Certificate Authotiry, otherwise the browsers won't be able to use the WSS protocol.
+To enable SSL, first we need the server side SSL key and certificate files. These files can be self prepared using OpenSSL or can be assigned by a certificate authority. To prepare own certificates, follow the instructions given in **[certificates.md](https://github.com/shubhadeepb14/jmqt/blob/master/examples/certificates.md)**. Please note, to enable SSL on WebSocket using WSS (WebSocket Secure) and release the application for global use, the certificates must be retrived from a Certificate Authotiry, otherwise the browsers won't be able to use the WSS protocol.
 
 To enable the SSL, "ENABLE_SSL" 'server.conf' field must be set to 1 and "SSL" related fields must be uncommented :
 ```
@@ -245,3 +252,113 @@ And the "REMOTE_PORT" field must be set to the SSL Socket Port of the server (80
 ```
 REMOTE_PORT = 8011
 ```
+## 3. sample_angularjs_client
+This directory contains a web client which implements all the basic operations of **JMQT** protocol using **WebSocket**. This aplications has been developed using **AngularJS 1.6.5** and **[jmqt-client.js](https://github.com/shubhadeepb14/jmqt/tree/master/jsclient)**. This demo application contains a single page (we named it 'home') and uses [Angular UI Router](https://github.com/angular-ui/ui-router) to render the page.
+
+To understand the basic structure of the code, first take a look at the following files :
+-  **index.html** - The root html file of the Angular App. All the JS and CSS dependencies are imported here.
+-  **static/js/jmqt-client.js** - JMQT Javascript client library.
+-  **services/jmqtService.js** - An Angular JS service wrapper for the JMQT client library. This service directly accesses the JMQT client library and the Angular controller use this service for all the JMQT client calls.
+-  **app.js** - The JS file which creates the Angular App. This file contains the basic JMQT configurations (e.g. host, port etc.) at line 26 - 28. And after that, it contains the Angular App definition and configuration. At line 77 in this file, we initiate the JMQT client using the jmqtService.
+-  **controllers/homeCtrl.js** - The Angular controller which performs all the UI actions on the home page.
+-  **templates/home.html** - HTML template for the home page.
+
+The JMQT client library can be imported into the code by importing the **[jmqt-client.js](https://github.com/shubhadeepb14/jmqt/tree/master/jsclient)** file. As mentioned above, all access to this library is wrapped up in the **services/jmqtService.js** file. To understand how the library works, we need to take a look at this file.
+
+#### 3.a. Inititating the client 
+The following is used to initiate the JMQT client (line 28) :
+```
+_jmqtClient = new JMQTClient(jmqtHost, jmqtPort, enableSsl);
+```
+#### 3.b. Registering callbacks
+Just like the Python client, we need to register the callbacks for 'push' and 'disconnect'. See line 32 - 46
+```
+_jmqtClient.on('push', function (channel, client, data, qos, retainFlag) {
+    //your code here
+});
+
+_jmqtClient.on('disconnect', function (websockAddress) {
+    //your code here
+});
+```
+#### 3.c. JMQT operations
+All JMQT operations (e.g auth, connect, pub, sub etc.) can be done using the '_jmqtClient' object. For example, to do the 'auth' operations, we need :
+```
+_jmqtClient.auth(authData, function (status, token, clientId, msg) {
+    //your code here 
+});
+```
+Take a look at the following function definitions of **services/jmqtService.js** file to have a better understanding of the operations :
+-  **auth** : var auth = function (authData)
+```
+_jmqtClient.auth(authData, function (status, token, clientId, msg) {
+    //your code here
+});
+```
+-  **connect** : var connect = function (clientId, token)
+```
+_jmqtClient.conn(clientId, token, function (status) {
+    //your code here
+});
+```
+-  **disconnect** : var disconnect = function (sendDisconn = false)
+```
+_jmqtClient.disconnect(sendDisconn); 
+```
+-  **sub** : var sub = function (channelName, persistentFlag = 0)
+```
+_jmqtClient.sub(channelName, persistentFlag, function (status, channelName) {
+    //your code here
+});
+```
+-  **unsub** : var unsub = function (channelName)
+```
+_jmqtClient.unsub(channelName, function (status, channelName) {
+    //your code here
+});
+```
+-  **pub** : var pub = function (channelName, jsonData = {}, retainFlag = 0, qos = 0)
+```
+_jmqtClient.pub(channelName, jsonData, retainFlag, qos, function (status, packetId, respData) {
+    //your code here
+});
+```
+Please note, in non-angular applications, the 'jmqtService' file is not required and the above operations can directly be accessed by the DOM controllers.
+#### 3.d. Accessing the service
+The controller **controllers/homeCtrl.js** injects the dependency on the **jmqtService** using the following code 
+```
+myApp.controller("homeCtrl", function ($scope, jmqtService) {
+```
+Now the controller can access the functions defined in **jmqtService**. For an example, the 'auth' function can be accessed as
+```
+var promise = jmqtService.auth({ client_name: $scope.clientData.clientName });
+    promise.then(function (result) {
+        if (result.status == JMQT.statusCodes.OK) {
+            $scope.log("JMQT client authentication OK. Sending connect request..");
+        } else {
+            $scope.log("JMQT client authentication FAILED. Status " + result.status + ", Message " + result.msg);
+        }
+    });
+```
+## 4. sample_load_balancer.py
+To load balance the pyjmqt.server, first we need to run the 'sample_server.py' in at least two different nodes. Let's assume that one of the nodes has the IP 192.168.1.10 and the other has the IP 192.168.1.11.
+
+Now, take a look at the **load_balancer.conf** file. For the given scenario, the configuration must go as follows
+```
+[options]
+buffer_size=4096
+
+[mappings]
+8010=192.168.1.10:8010,192.168.1.11:8010
+8011=192.168.1.10:8011,192.168.1.11:8011
+8012=192.168.1.10:8012,192.168.1.11:8012
+8013=192.168.1.10:8013,192.168.1.11:8013
+```
+Here, 'buffer_size' is the size of the buffer to be read from the Socket/Web Socket connection and the 'mappings' values contain the mapping of the local ports (for default ports, see the 'Default Ports' section of this document) to the remote IP:Port combination.
+
+Once the configuration is set, just run the load balancer using python 3 (3.6 or above):
+```
+python3 sample_load_balancer.py
+```
+
+Please note, to run the server with load balancers, the 'ENABLE_MYSQL' and 'ENABLE_REDIS' fields must be enabled in the server config file ('server.conf').

@@ -19,7 +19,7 @@
 // OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-myApp.controller("homeCtrl", function ($scope, $timeout, jmqtService) {
+myApp.controller("homeCtrl", function ($scope, jmqtService) {
     $scope.clientData = { clientName: "webclient" }
     $scope.pubData = { message: "", channelName: "" }
     $scope.subData = { channelName: "", persistent: false }
@@ -187,19 +187,16 @@ myApp.controller("homeCtrl", function ($scope, $timeout, jmqtService) {
     }
 
     //logs a message
-    //as this function is called from non-angular JS callback (directly from the jmqt-client library),
-    //we need to call $timeout to apply the changes on the $scope
     $scope.log = function (msg) {
         $scope.logMessages.push(msg);
     }
 
+    //clears the log
     $scope.clearLog = function () {
         $scope.logMessages = [];
     }
 
     //sets the current connection status
-    //as this function is called from non-angular JS callback (directly from the jmqt-client library),
-    //we need to call $timeout to apply the changes on the $scope
     $scope.setConnectionStatus = function (isConnected) {
         $scope.connected = isConnected;
     }

@@ -167,7 +167,7 @@ class Main:
         try:
             self.logger.log_info ("[MAIN] Interrupt received..")
             # stop all the modules created in initiate_program
-            self.__client.stop()
+            self.__client.stop(send_disconn=1) #send_disconn flag sends the disconnection packet to the server
             self.logger.log_info ("[MAIN] Stopped!")
         except Exception as e:
             self.logger.log_error ("[MAIN] Termination error! " + str(e))    

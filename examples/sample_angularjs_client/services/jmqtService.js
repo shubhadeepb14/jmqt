@@ -81,7 +81,7 @@ myApp.service('jmqtService', function ($q, $rootScope) {
 
     // disconnects the server
     var disconnect = function (sendDisconn = false) {
-        _jmqtClient.disconnect(sendDisconn);
+        _jmqtClient.disconnect(sendDisconn); //sendDisconn flag sends the disconnection packet to the server
     }
 
     // publishes jmqt message

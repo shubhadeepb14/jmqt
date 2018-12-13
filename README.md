@@ -54,5 +54,8 @@ To know more about JMQT, visit [JMQT website](https://www.jmqt.org/)
     1. **Python 3.5** or above (recommended 3.6 or above)
     2. Python libraries as listed in **pip_requirements/load_balancer.txt**
 
+## Developer Guides
+For developer guides, please open the **[examples](https://github.com/shubhadeepb14/jmqt/tree/master/examples)** directory and have a look at **[README.md](https://github.com/shubhadeepb14/jmqt/blob/master/examples/README.md)**.
+
 ## Licensing
 This repository is open source and under **[MIT license](https://opensource.org/licenses/MIT)**.
