@@ -41,7 +41,7 @@ class Main:
     __connected = False
     
     # jmqt channel name for the sample client
-    __test_channel = 'ch'
+    __test_channel = 'mychannel'
     
     def initiate_program(self, client_name):
         self.__client_name = client_name

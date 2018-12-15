@@ -1,0 +1,71 @@
+12-15 10:30:08 [JMQTServer] INF : Loading config "/home/shubhadeep/Development/personal/github/jmqt/examples/server.conf"
+12-15 10:30:08 [JMQTServer:ConnectionHandler] INF : MySQL/MariaDb is disabled. Switching to SQLite..
+12-15 10:30:09 [JMQTServer:SQLiteService] INF : Connecting SQLite Db /home/shubhadeep/Development/personal/github/jmqt/pyjmqt/server/core/services/jmqt.db
+12-15 10:30:09 [JMQTServer:CacheService] INF : Redis is disabled. Skip connection..
+12-15 10:30:09 [JMQTServer:MyJMQTApp] INF : Server Start
+12-15 10:30:09 [JMQTServer:MyJMQTApp] INF : Server start
+12-15 10:30:09 [JMQTServer:SOCKET] INF : Listening on tcp 8010
+12-15 10:30:09 [JMQTServer:WEB_SOCKET] INF : Listening on tcp 8012
+12-15 10:33:49 [JMQTServer:SOCKET] INF : Connnected: client pyclient1 127.0.0.1:38470
+12-15 11:07:30 [JMQTServer:WEB_SOCKET] INF : Connnected: client webclient 127.0.0.1:49436
+12-15 11:07:30 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:49436 : status 1
+12-15 11:08:20 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:49436 : status 1
+12-15 11:08:26 [JMQTServer:WEB_SOCKET] INF : disconn from client webclient 127.0.0.1:49436
+12-15 11:08:26 [JMQTServer:WEB_SOCKET] INF : Conn closed: client webclient, peer 127.0.0.1:49436
+12-15 11:08:29 [JMQTServer:WEB_SOCKET] INF : Connnected: client webclient 127.0.0.1:49444
+12-15 11:08:29 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:49444 : status 1
+12-15 11:09:47 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:49444 : status 1
+12-15 11:11:57 [JMQTServer:WEB_SOCKET] INF : disconn from client webclient 127.0.0.1:49444
+12-15 11:11:57 [JMQTServer:WEB_SOCKET] INF : Conn closed: client webclient, peer 127.0.0.1:49444
+12-15 11:13:13 [JMQTServer:MyJMQTApp] INF : Server stop
+12-15 11:14:53 [JMQTServer] INF : Loading config "/home/shubhadeep/Development/personal/github/jmqt/examples/server.conf"
+12-15 11:14:53 [JMQTServer:ConnectionHandler] INF : MySQL/MariaDb is disabled. Switching to SQLite..
+12-15 11:14:53 [JMQTServer:SQLiteService] INF : Connecting SQLite Db /home/shubhadeep/Development/personal/github/jmqt/pyjmqt/server/core/services/jmqt.db
+12-15 11:14:54 [JMQTServer:CacheService] INF : Redis is disabled. Skip connection..
+12-15 11:14:54 [JMQTServer:MyJMQTApp] INF : Server Start
+12-15 11:14:54 [JMQTServer:MyJMQTApp] INF : Server start
+12-15 11:14:54 [JMQTServer:SOCKET] INF : Listening on tcp 8010
+12-15 11:14:54 [JMQTServer:WEB_SOCKET] INF : Listening on tcp 8012
+12-15 11:15:01 [JMQTServer:SOCKET] INF : Connnected: client pyclient1 127.0.0.1:39082
+12-15 11:15:12 [JMQTServer:WEB_SOCKET] INF : Connnected: client webclient 127.0.0.1:49482
+12-15 11:15:12 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:49482 : status 1
+12-15 11:15:24 [JMQTServer:WEB_SOCKET] INF : Conn closed: client webclient, peer 127.0.0.1:49482
+12-15 11:15:28 [JMQTServer:WEB_SOCKET] INF : Connnected: client webclient 127.0.0.1:49602
+12-15 11:15:28 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:49602 : status 1
+12-15 11:15:38 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:49602 : status 1
+12-15 11:16:09 [JMQTServer:WEB_SOCKET] INF : Conn closed: client webclient, peer 127.0.0.1:49602
+12-15 11:16:11 [JMQTServer:WEB_SOCKET] INF : Connnected: client webclient 127.0.0.1:49746
+12-15 11:16:11 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:49746 : status 1
+12-15 11:18:30 [JMQTServer:WEB_SOCKET] INF : Conn closed: client webclient, peer 127.0.0.1:49746
+12-15 11:18:32 [JMQTServer:WEB_SOCKET] INF : Connnected: client webclient 127.0.0.1:50944
+12-15 11:18:32 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:50944 : status 1
+12-15 11:21:10 [JMQTServer:WEB_SOCKET] INF : Conn closed: client webclient, peer 127.0.0.1:50944
+12-15 11:21:13 [JMQTServer:WEB_SOCKET] INF : Connnected: client webclient 127.0.0.1:52388
+12-15 11:21:13 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:52388 : status 1
+12-15 11:22:00 [JMQTServer:WEB_SOCKET] INF : Conn closed: client webclient, peer 127.0.0.1:52388
+12-15 11:22:31 [JMQTServer:WEB_SOCKET] INF : Connnected: client webclient 127.0.0.1:53152
+12-15 11:22:31 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:53152 : status 1
+12-15 11:25:40 [JMQTServer:WEB_SOCKET] INF : Conn closed: client webclient, peer 127.0.0.1:53152
+12-15 11:25:42 [JMQTServer:WEB_SOCKET] INF : Connnected: client webclient 127.0.0.1:54768
+12-15 11:25:42 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:54768 : status 1
+12-15 11:26:22 [JMQTServer:WEB_SOCKET] INF : disconn from client webclient 127.0.0.1:54768
+12-15 11:26:22 [JMQTServer:WEB_SOCKET] INF : Conn closed: client webclient, peer 127.0.0.1:54768
+12-15 11:26:23 [JMQTServer:WEB_SOCKET] INF : Connnected: client webclient 127.0.0.1:54796
+12-15 11:26:23 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:54796 : status 1
+12-15 11:26:26 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:54796 : status 1
+12-15 11:26:27 [JMQTServer:WEB_SOCKET] INF : disconn from client webclient 127.0.0.1:54796
+12-15 11:26:27 [JMQTServer:WEB_SOCKET] INF : Conn closed: client webclient, peer 127.0.0.1:54796
+12-15 11:26:44 [JMQTServer:WEB_SOCKET] INF : Connnected: client webclient 127.0.0.1:54806
+12-15 11:26:44 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:54806 : status 1
+12-15 11:27:02 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:54806 : status 1
+12-15 11:28:28 [JMQTServer:WEB_SOCKET] INF : Conn closed: client webclient, peer 127.0.0.1:54806
+12-15 11:28:32 [JMQTServer:WEB_SOCKET] INF : Connnected: client webclient 127.0.0.1:54930
+12-15 11:28:32 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:54930 : status 1
+12-15 11:34:40 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:54930 : status 1
+12-15 11:34:43 [JMQTServer:WEB_SOCKET] INF : disconn from client webclient 127.0.0.1:54930
+12-15 11:34:43 [JMQTServer:WEB_SOCKET] INF : Conn closed: client webclient, peer 127.0.0.1:54930
+12-15 11:34:45 [JMQTServer:WEB_SOCKET] INF : Connnected: client webclient 127.0.0.1:55070
+12-15 11:34:45 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:55070 : status 1
+12-15 11:37:11 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:55070 : status 1
+12-15 11:39:06 [JMQTServer:WEB_SOCKET] INF : disconn from client webclient 127.0.0.1:55070
+12-15 11:39:06 [JMQTServer:WEB_SOCKET] INF : Conn closed: client webclient, peer 127.0.0.1:55070

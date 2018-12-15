@@ -21,8 +21,8 @@
 
 myApp.controller("homeCtrl", function ($scope, jmqtService) {
     $scope.clientData = { clientName: "webclient" }
-    $scope.pubData = { message: "", channelName: "" }
-    $scope.subData = { channelName: "", persistent: false }
+    $scope.pubData = { message: "Test Message", channelName: "mychannel" }
+    $scope.subData = { channelName: "mychannel", persistent: false }
 
     $scope.showSubForm = false;
     $scope.logMessages = [];
@@ -77,7 +77,8 @@ myApp.controller("homeCtrl", function ($scope, jmqtService) {
     }
 
     //when a new data arrives, this functions receives the data
-    $scope.$on('jmqt:data', function (event, packet) {
+    $scope.$on('jmqt:push', function (event, packet) {
+        console.log('ssssssssssssssss')
         $scope.$apply(function () {
             var strData = '';
             if (packet.data.constructor === {}.constructor) {
@@ -125,7 +126,7 @@ myApp.controller("homeCtrl", function ($scope, jmqtService) {
         forceValidateForm(form);
         if (form.$valid) {
             //if the form is valid, send the pub request
-            var promise = jmqtService.pub($scope.pubData.channelName, jsonData = $scope.pubData.message, retainFlag = 1, qos = 0);
+            var promise = jmqtService.pub($scope.pubData.channelName, jsonData = $scope.pubData.message, retainFlag = 1, qos = 1);
             promise.then(function (result) {
                 //check the status of the response
                 if (result.status == JMQT.statusCodes.OK) {

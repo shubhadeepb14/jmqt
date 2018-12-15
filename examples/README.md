@@ -12,6 +12,88 @@ Below is the list of the TCP port numbers used by the example applications (as s
 -  8012 : SSL Socket
 -  8013 : SSL WebSocket
 
+## Run the examples
+To run the examples, make sure that the requirements as mentioned in the [README.md](https://github.com/shubhadeepb14/jmqt/blob/master/README.md) are installed and configured. By default, we do not need Redis or MySQL to run the examples, as the example server uses SQLite Database by default. We also do not need any SSL certificates as the SSL is by default disabled in example server and clients. The clients (python client and browser application) are configured to the default ports in 'localhost' with SSL disabled.
+
+Before executing the following commands, please make sure you are in the 'examples' directory.
+
+### Run the Server
+To run the server, execute the following command in a terminal :
+```
+python3 sample_server.py
+```
+The output will look something like the following :
+```
+12-15 10:30:08 [JMQTServer] INF : Loading config "server.conf"
+12-15 10:30:08 [JMQTServer:ConnectionHandler] INF : MySQL/MariaDb is disabled. Switching to SQLite..
+12-15 10:30:09 [JMQTServer:SQLiteService] INF : Connecting SQLite Db jmqt.db
+12-15 10:30:09 [JMQTServer:CacheService] INF : Redis is disabled. Skip connection..
+12-15 10:30:09 [JMQTServer:MyJMQTApp] INF : Server Start
+12-15 10:30:09 [JMQTServer:MyJMQTApp] INF : Server start
+12-15 10:30:09 [JMQTServer:SOCKET] INF : Listening on tcp 8010
+12-15 10:30:09 [JMQTServer:WEB_SOCKET] INF : Listening on tcp 8012
+```
+If the output looks like the above, it means that the server has been started properly.
+
+### Run the Python Client
+To run the python client, execute the following command in a terminal :
+```
+python3 sample_client.py
+```
+The output will look something like the following :
+```
+12-15 10:33:48 [JMQTClient] INF : Loading config "client.conf"
+12-15 10:33:48 [JMQTClient] INF : [MAIN] Start initiated..
+12-15 10:33:49 [JMQTClient] INF : [MAIN] Retry auth..
+12-15 10:33:49 [JMQTClient] INF : [MAIN] Requesting auth with client name 'pyclient1'
+12-15 10:33:49 [JMQTClient] INF : Opening socket localhost:8010
+12-15 10:33:49 [JMQTClient] INF : Read started
+12-15 10:33:49 [JMQTClient] INF : Socket opened localhost:8010
+12-15 10:33:49 [JMQTClient] INF : auth..
+12-15 10:33:49 [JMQTClient] INF : authAck, status 1
+12-15 10:33:49 [JMQTClient] INF : [MAIN] Auth status OK
+12-15 10:33:49 [JMQTClient] INF : [MAIN] Requesting conn with client id 'pyclient1'
+12-15 10:33:49 [JMQTClient] INF : conn..
+12-15 10:33:49 [JMQTClient] INF : connAck, status 1
+12-15 10:33:49 [JMQTClient] INF : HB started
+12-15 10:33:49 [JMQTClient] INF : [Main] Data on 'update' from  : {'online': 'pyclient1'} (QOS 0, RETAIN 0)
+12-15 10:33:49 [JMQTClient] INF : [MAIN] Conn status 1
+12-15 10:33:49 [JMQTClient] INF : [MAIN] Requesting sub to channel 'mychannel'
+12-15 10:33:49 [JMQTClient] INF : sub 'mychannel' persistent 1
+12-15 10:33:49 [JMQTClient] INF : [Main] Data on 'ch' from pyclient1 : 2018-12-06 12:33:36.414643 (QOS 0, RETAIN 1)
+12-15 10:33:49 [JMQTClient] INF : [MAIN] Sub to channel 'mychannel' status 1
+12-15 10:33:59 [JMQTClient] INF : [MAIN] Pub dummy data on 'mychannel'
+```
+If the output looks like the above, it means that the client has been started properly. This client will have a client id as 'pyclient1' by default and will send a dummy data to channel 'mychannel' in every 10 seconds.
+
+### Run the Web Client
+To run the web client, first 'cd' to the 'sample_angularjs_client' directory
+```
+cd sample_angularjs_client
+```
+We need to put this folder in a web server in order to run the browser client. The simplest way is to use python3 'http.server'. For production, we may use nginx or apache for hosting the web client.
+```
+python3 -m http.server 8000
+```
+The output must be
+```
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+```
+If the output looks like the above, it means that the web client has been started properly. You can visit this client opening the URL 'http://localhost:8000' in a browser. The screen will look like below :
+
+
+
+## Testing all together
+The JMQT python client will have a client id as 'pyclient1' by default and will send a dummy data to channel 'mychannel' in every 10 seconds.
+
+```
+12-15 11:28:36 [JMQTClient] INF : [Main] Data on 'mychannel' from webclient : Test Message (QOS 1, RETAIN 0)
+```
+
+```
+12-15 11:37:32 [JMQTClient] INF : [Main] Data on '#pyclient1' from webclient : p2p Message (QOS 1, RETAIN 0)
+```
+
 ## Directory Structure
 This directory contains the sample projects which use the above libraries. 
 1. **sample_server.py** : Python 3.6 code which uses the **pyjmqt.server** library to implement a JMQT server. A .conf file is required which contains the server configuraion:
@@ -339,6 +421,18 @@ var promise = jmqtService.auth({ client_name: $scope.clientData.clientName });
             $scope.log("JMQT client authentication FAILED. Status " + result.status + ", Message " + result.msg);
         }
     });
+```
+The service broadcasts the 'push' and 'disconnect' data and the controller receives the same as follows
+```
+    //when a new data arrives, this functions receives the data
+    $scope.$on('jmqt:push', function (event, packet) {
+        
+    });
+
+    //disconnection trigger is received here
+    $scope.$on('jmqt:disconnect', function (event, websockAddress) {
+        
+    })
 ```
 ## 4. sample_load_balancer.py
 To load balance the pyjmqt.server, first we need to run the 'sample_server.py' in at least two different nodes. Let's assume that one of the nodes has the IP 192.168.1.10 and the other has the IP 192.168.1.11.
