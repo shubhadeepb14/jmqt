@@ -81,7 +81,7 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
 If the output looks like the above, it means that the web client has been started properly. You can visit this client opening the URL 'http://localhost:8000' in a browser. The screen will look like below :
 
-
+![webclient_default](https://github.com/shubhadeepb14/jmqt/raw/master/examples/screenshots/webclient_default.png)
 
 ## Testing all together
 The JMQT python client will have a client id as 'pyclient1' by default and will send a dummy data to channel 'mychannel' in every 10 seconds.
