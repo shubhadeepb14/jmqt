@@ -69,3 +69,5 @@
 12-15 11:37:11 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:55070 : status 1
 12-15 11:39:06 [JMQTServer:WEB_SOCKET] INF : disconn from client webclient 127.0.0.1:55070
 12-15 11:39:06 [JMQTServer:WEB_SOCKET] INF : Conn closed: client webclient, peer 127.0.0.1:55070
+12-15 11:45:41 [JMQTServer:WEB_SOCKET] INF : Connnected: client webclient 127.0.0.1:55174
+12-15 11:45:41 [JMQTServer:WEB_SOCKET] INF : Control Pub channel $mySubscriptions from client webclient 127.0.0.1:55174 : status 1

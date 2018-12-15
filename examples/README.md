@@ -83,16 +83,83 @@ If the output looks like the above, it means that the web client has been starte
 
 ![webclient_default](https://github.com/shubhadeepb14/jmqt/raw/master/examples/screenshots/webclient_default.png)
 
-## Testing all together
-The JMQT python client will have a client id as 'pyclient1' by default and will send a dummy data to channel 'mychannel' in every 10 seconds.
+Now, press the 'Connect' button to connect the server. After the connection is successfull, the screen will like below :
+
+![webclient_connected](https://github.com/shubhadeepb14/jmqt/raw/master/examples/screenshots/webclient_connected.png)
+
+After successfull connection, subscribe to the demo channel 'mychannel'. To do that, click the '+ New Subscription' button, enter channel name as 'mychannel', check / uncheck the 'persistent' checkbox as per your choice and click 'Subscribe'.
+
+![webclient_sub](https://github.com/shubhadeepb14/jmqt/raw/master/examples/screenshots/webclient_sub.png)
+
+If the subscription is successfull, it will receive the Retained packets (logged as RETAIN 1) of 'mychannel' sent by the python client and the screen will look like below
+
+![webclient_after_sub](https://github.com/shubhadeepb14/jmqt/raw/master/examples/screenshots/webclient_after_sub.png)
+
+### Testing all together
+The python client will have a client id as 'pyclient1' by default and will send a dummy data to channel 'mychannel' in every 10 seconds.
+
+The webclient will continue to receive messages published by the python client 'pyclient1' to channel 'mychannel'. These messages will look like below:
+
+![webclient_push](https://github.com/shubhadeepb14/jmqt/raw/master/examples/screenshots/webclient_push.png)
+
+Now, the web client can publish messages to the same channel 'mychannel'
+
+![webclient_pub](https://github.com/shubhadeepb14/jmqt/raw/master/examples/screenshots/webclient_pub.png)
+
+This message will be logged at the python client terminal as below
 
 ```
 12-15 11:28:36 [JMQTClient] INF : [Main] Data on 'mychannel' from webclient : Test Message (QOS 1, RETAIN 0)
 ```
+The web client can also publish p2p messages to the 'pyclient1' as below
 
+![webclient_pub_p2p](https://github.com/shubhadeepb14/jmqt/raw/master/examples/screenshots/webclient_pub_p2p.png)
+
+This p2p message will be logged at the python client terminal as below
 ```
 12-15 11:37:32 [JMQTClient] INF : [Main] Data on '#pyclient1' from webclient : p2p Message (QOS 1, RETAIN 0)
 ```
+
+### Running multiple client
+
+#### Multiple python clients
+To run multiple pyhton clients from the same or different computer, we need to copy the 'sample_client.py' file multiple times. The 'client.conf' file will be same for the all of the copy. In each copy, make sure to change the following line to an unique client name (e.g. pyclient2, pyclient3 and so on)
+```
+_Main.initiate_program('pyclient1')
+```
+
+#### Multiple web clients
+To run multiple web clients on the same or different computer, we need to open the URL 'http://localhost:8000' in multiple browsers (e.g. one in chrome, one in firefox and so on). Now, before clicking the 'Connect' button, make sure that the client name is different in each browser, for example 'webclient' in chrome, 'webclient2' in firefox and so on.
+
+### Running on a Network
+To run the examples in a network instead of a single computer, make the following changes :
+
+1. In 'client.conf', set the 'REMOTE_HOST' pointing to the IP address where the 'sample_server.py' is running. e.g.
+```
+REMOTE_HOST = "192.168.1.10"
+```
+2. In 'sample_angularjs_client/app.js', set the variable 'jmqtHost' pointing to the IP address where the 'sample_server.py' is running. e.g.
+
+```
+var jmqtHost = "192.168.1.10",
+```
+### Changing the port numbers
+To change the socket and websocket port numbers of the server, set the required port numbers to the following paramters in 'server.conf' 
+```
+SOCKET_PORT = 8010
+WEBSOCKET_PORT = 8012
+# port numbers for SSL connections on SOCKET and WEBSOCKET
+SSL_SOCKET_PORT = 8011
+SSL_WEBSOCKET_PORT = 8013
+```
+
+The 'REMOTE_PORT' fields in 'client.conf' and 'jmqtPort' in 'sample_angularjs_client/app.js' also need to be pointed to the new port number.
+
+### Run with SSL
+To run the server with SSL, follow the instructions in section '1.j. Enabling SSL' of this document. To run the python client with SSL, follow the instructions in section '2.i. Enabling SSL' of this document. To run the web client with SSL, set the 'enableSsl' variable as 'true' in 'sample_angularjs_client/app.js'.
+
+### Run in Distributed Environment
+To run the server in distributed environment, follow the instructions in section '1.i. Distributed Environment' of this document.
 
 ## Directory Structure
 This directory contains the sample projects which use the above libraries. 
