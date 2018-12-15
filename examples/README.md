@@ -13,12 +13,12 @@ Below is the list of the TCP port numbers used by the example applications (as s
 -  8013 : SSL WebSocket
 
 ## Run the examples
-To run the examples, make sure that the requirements as mentioned in the [README.md](https://github.com/shubhadeepb14/jmqt/blob/master/README.md) are installed and configured. By default, we do not need Redis or MySQL to run the examples, as the example server uses SQLite Database by default. We also do not need any SSL certificates as the SSL is by default disabled in example server and clients. The clients (python client and browser application) are configured to the default ports in 'localhost' with SSL disabled.
+To run the examples, make sure that the **requirements** as mentioned in the [README.md](https://github.com/shubhadeepb14/jmqt/blob/master/README.md) of the root directory are installed and configured. By default, we **do not need Redis or MySQL** to run the examples, as the example server uses **SQLite** Database by default. We also **do not need SSL certificates** as the SSL is by default **disabled** in example server and clients. The server and clients (python client and web client) are configured to use the **default ports** with the host targeted to **'localhost'**.
 
-Before executing the following commands, please make sure you are in the 'examples' directory.
+Before executing the following commands, please make sure you are in the **'examples'** directory.
 
 ### Run the Server
-To run the server, execute the following command in a terminal :
+To run the server, **execute** the following command in a terminal :
 ```
 python3 sample_server.py
 ```
@@ -33,10 +33,10 @@ The output will look something like the following :
 12-15 10:30:09 [JMQTServer:SOCKET] INF : Listening on tcp 8010
 12-15 10:30:09 [JMQTServer:WEB_SOCKET] INF : Listening on tcp 8012
 ```
-If the output looks like the above, it means that the server has been started properly.
+If the output looks like the above, it means that the server **has been started** properly.
 
 ### Run the Python Client
-To run the python client, execute the following command in a terminal :
+To run the python client, **execute** the following command in a terminal :
 ```
 python3 sample_client.py
 ```
@@ -64,14 +64,14 @@ The output will look something like the following :
 12-15 10:33:49 [JMQTClient] INF : [MAIN] Sub to channel 'mychannel' status 1
 12-15 10:33:59 [JMQTClient] INF : [MAIN] Pub dummy data on 'mychannel'
 ```
-If the output looks like the above, it means that the client has been started properly. This client will have a client id as 'pyclient1' by default and will send a dummy data to channel 'mychannel' in every 10 seconds.
+If the output looks like the above, it means that the client **has been started** properly. This client will have a client id as **pyclient1** by default and will send a dummy data to channel **mychannel** in every **10 seconds**.
 
 ### Run the Web Client
-To run the web client, first 'cd' to the 'sample_angularjs_client' directory
+To run the web client, first open to the **sample_angularjs_client** directory
 ```
 cd sample_angularjs_client
 ```
-We need to put this folder in a web server in order to run the browser client. The simplest way is to use python3 'http.server'. For production, we may use nginx or apache for hosting the web client.
+We need to put this folder in a web server in order to run the browser client. The simplest way is to use **python3 'http.server'**. For production, we may use nginx or apache for hosting the web client.
 ```
 python3 -m http.server 8000
 ```
@@ -79,43 +79,43 @@ The output must be
 ```
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
-If the output looks like the above, it means that the web client has been started properly. You can visit this client opening the URL 'http://localhost:8000' in a browser. The screen will look like below :
+If the output looks like the above, it means that the web client **has been started** properly. You can visit this client opening the URL 'http://localhost:8000' in a browser. The screen will look like below :
 
 ![webclient_default](https://github.com/shubhadeepb14/jmqt/raw/master/examples/screenshots/webclient_default.png)
 
-Now, press the 'Connect' button to connect the server. After the connection is successfull, the screen will like below :
+Now, press the **Connect** button in the above screen to **connect the server**. After the connection is successfull, the screen will like below :
 
 ![webclient_connected](https://github.com/shubhadeepb14/jmqt/raw/master/examples/screenshots/webclient_connected.png)
 
-After successfull connection, subscribe to the demo channel 'mychannel'. To do that, click the '+ New Subscription' button, enter channel name as 'mychannel', check / uncheck the 'persistent' checkbox as per your choice and click 'Subscribe'.
+After successfull connection, **subscribe** to the demo channel **mychannel**. To do that, click the **+ New Subscription** button, enter channel name as 'mychannel', check / uncheck the 'persistent' checkbox as per your choice and click 'Subscribe'.
 
 ![webclient_sub](https://github.com/shubhadeepb14/jmqt/raw/master/examples/screenshots/webclient_sub.png)
 
-If the subscription is successfull, it will receive the Retained packets (logged as RETAIN 1) of 'mychannel' sent by the python client and the screen will look like below
+If the subscription is successfull, it will receive the **Retained packets** (logged as RETAIN 1) of **mychannel** sent by the python client and the screen will look like below
 
 ![webclient_after_sub](https://github.com/shubhadeepb14/jmqt/raw/master/examples/screenshots/webclient_after_sub.png)
 
 ### Testing all together
-The python client will have a client id as 'pyclient1' by default and will send a dummy data to channel 'mychannel' in every 10 seconds.
+The python client will have a client id as **pyclient1** by default and will send a dummy data to channel **mychannel** in every **10 seconds**.
 
-The webclient will continue to receive messages published by the python client 'pyclient1' to channel 'mychannel'. These messages will look like below:
+The **web client** will continue to **receive** messages published by the python client **pyclient1** to channel **mychannel**. These messages will look like below:
 
 ![webclient_push](https://github.com/shubhadeepb14/jmqt/raw/master/examples/screenshots/webclient_push.png)
 
-Now, the web client can publish messages to the same channel 'mychannel'
+Now, the **web client** can **publish** messages to the same channel **mychannel**
 
 ![webclient_pub](https://github.com/shubhadeepb14/jmqt/raw/master/examples/screenshots/webclient_pub.png)
 
-This message will be logged at the python client terminal as below
+This message will be **logged** at the **python client** terminal as below
 
 ```
 12-15 11:28:36 [JMQTClient] INF : [Main] Data on 'mychannel' from webclient : Test Message (QOS 1, RETAIN 0)
 ```
-The web client can also publish p2p messages to the 'pyclient1' as below
+The **web client** can also **publish p2p** messages to the **pyclient1** as below
 
 ![webclient_pub_p2p](https://github.com/shubhadeepb14/jmqt/raw/master/examples/screenshots/webclient_pub_p2p.png)
 
-This p2p message will be logged at the python client terminal as below
+This **p2p** message will be **logged** at the **python client** terminal as below
 ```
 12-15 11:37:32 [JMQTClient] INF : [Main] Data on '#pyclient1' from webclient : p2p Message (QOS 1, RETAIN 0)
 ```
@@ -123,28 +123,28 @@ This p2p message will be logged at the python client terminal as below
 ### Running multiple client
 
 #### Multiple python clients
-To run multiple pyhton clients from the same or different computer, we need to copy the 'sample_client.py' file multiple times. The 'client.conf' file will be same for the all of the copy. In each copy, make sure to change the following line to an unique client name (e.g. pyclient2, pyclient3 and so on)
+To run multiple pyhton clients from the same or different computer, we need to **copy** the **sample_client.py** file multiple times. The **client.conf** file will be same for the all of the copy. In each copy, make sure to **change the following line** to an **unique client name** (e.g. pyclient2, pyclient3 and so on)
 ```
 _Main.initiate_program('pyclient1')
 ```
 
 #### Multiple web clients
-To run multiple web clients on the same or different computer, we need to open the URL 'http://localhost:8000' in multiple browsers (e.g. one in chrome, one in firefox and so on). Now, before clicking the 'Connect' button, make sure that the client name is different in each browser, for example 'webclient' in chrome, 'webclient2' in firefox and so on.
+To run multiple web clients on the same or different computer, we need to **open** the URL 'http://localhost:8000' in multiple browsers (e.g. one in chrome, one in firefox and so on). Now, before clicking the **Connect** button, make sure that the **client name** is **different** in **each browser**, for example 'webclient' in chrome, 'webclient2' in firefox and so on.
 
 ### Running on a Network
 To run the examples in a network instead of a single computer, make the following changes :
 
-1. In 'client.conf', set the 'REMOTE_HOST' pointing to the IP address where the 'sample_server.py' is running. e.g.
+1. In **client.conf**, set the parameter **REMOTE_HOST** pointing to the **IP address** where the **sample_server.py** is running. e.g.
 ```
 REMOTE_HOST = "192.168.1.10"
 ```
-2. In 'sample_angularjs_client/app.js', set the variable 'jmqtHost' pointing to the IP address where the 'sample_server.py' is running. e.g.
+2. In **sample_angularjs_client/app.js**, set the variable **jmqtHost** pointing to the **IP address** where the **sample_server.py** is running. e.g.
 
 ```
 var jmqtHost = "192.168.1.10",
 ```
 ### Changing the port numbers
-To change the socket and websocket port numbers of the server, set the required port numbers to the following paramters in 'server.conf' 
+To change the **socket and websocket port numbers** of the server, set the required port numbers to the following paramters in **server.conf**
 ```
 SOCKET_PORT = 8010
 WEBSOCKET_PORT = 8012
@@ -153,13 +153,13 @@ SSL_SOCKET_PORT = 8011
 SSL_WEBSOCKET_PORT = 8013
 ```
 
-The 'REMOTE_PORT' fields in 'client.conf' and 'jmqtPort' in 'sample_angularjs_client/app.js' also need to be pointed to the new port number.
+The **REMOTE_PORT** field in **client.conf** and **jmqtPort** in **sample_angularjs_client/app.js** also **need to be pointed** to the new port number.
 
 ### Run with SSL
-To run the server with SSL, follow the instructions in section '1.j. Enabling SSL' of this document. To run the python client with SSL, follow the instructions in section '2.i. Enabling SSL' of this document. To run the web client with SSL, set the 'enableSsl' variable as 'true' in 'sample_angularjs_client/app.js'.
+To run the **server** with SSL, follow the instructions in section **1.j. Enabling SSL** of this document. To run the **python client** with SSL, follow the instructions in section **2.i. Enabling SSL** of this document. To run the **web client** with SSL, set the **enableSsl** variable as 'true' in **sample_angularjs_client/app.js**.
 
 ### Run in Distributed Environment
-To run the server in distributed environment, follow the instructions in section '1.i. Distributed Environment' of this document.
+To run the server in distributed environment, follow the instructions in section **1.i. Distributed Environment** of this document.
 
 ## Directory Structure
 This directory contains the sample projects which use the above libraries. 
@@ -187,7 +187,7 @@ The **constructor** of this class takes the asyncio event loop as an arguement (
 def __init__(self, loop):
 ```
 ### 1.c. Create the server (Object of the Server class)
-Inside the constructor, we pass the path of the **config file** (server.conf file) and the **asyncio event loop** to create an object of the **Server** (line 44). This event loop is passed by the 'main' snippet of the code (see section '1.h. Start and Stop the server'):
+Inside the constructor, we pass the path of the **config file** (server.conf file) and the **asyncio event loop** to create an object of the **Server** (line 44). This event loop is passed by the 'main' snippet of the code (see section **1.h. Start and Stop the server**):
 ```
 self.server = Server(self.loop, self.configFile)
 ```
@@ -295,7 +295,7 @@ MYSQL_PORT = 3306
 MYSQL_PSWD = ""
 MYSQL_USER = "root"
 ```
-Distriuted environment needs a load balancer. For the guide to implement a load balancer, see section '4. load_balancer.py' of this document.
+Distriuted environment needs a load balancer. For the guide to implement a load balancer, see section **4. load_balancer.py** of this document.
 
 ### 1.j. Enabling SSL
 To enable SSL, first we need the server side SSL key and certificate files. These files can be self prepared using OpenSSL or can be assigned by a certificate authority. To prepare own certificates, follow the instructions given in **[certificates.md](https://github.com/shubhadeepb14/jmqt/blob/master/examples/certificates.md)**. Please note, to enable SSL on WebSocket using WSS (WebSocket Secure) and release the application for global use, the certificates must be retrived from a Certificate Authotiry, otherwise the browsers won't be able to use the WSS protocol.
