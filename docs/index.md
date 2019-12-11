@@ -29,18 +29,15 @@ JMQT supports **P2P** (Point to Point) messaging in addition to publish-subscrib
 
 ### Versions and Documentation
 
-Version 1.0
-Released on December, 2018
+**Version 1.0** _Released on December, 2018_
 
-[Download Protocol Documentation](https://github.com/shubhadeepb14/jmqtdoc/raw/master/JMQT_1_0_Specifications.pdf)
+[Download V1.0. Protocol Documentation](https://github.com/shubhadeepb14/jmqtdoc/raw/master/JMQT_1_0_Specifications.pdf)
  
 
 ### Implementation
 
-An open source implementation of JMQT is available. [Click here](https://github.com/shubhadeepb14/jmqt) to visit the repository.
+An open source implementation of JMQT is available. [Click here](https://github.com/shubhadeepb14/jmqt) to visit the GitHub repository. 
 
- 
+### Contribute
 
-### Stay Connected
-
-To become a part of the JMQT community, you can subscribe to our newsletter below. You can also find us on twitter @jmqtorg.
+To contribute in JMQT, please drop an email to shubhadeep.banerjee10@gmail.com. But, please [visit the repository](https://github.com/shubhadeepb14/jmqt) and read the [code of conducts](https://github.com/shubhadeepb14/jmqt/blob/master/CODE_OF_CONDUCT.md) before sending an email.
