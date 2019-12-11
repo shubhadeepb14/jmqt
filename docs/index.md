@@ -1,4 +1,6 @@
-## What is JMQT?
+## An Open Source independent IoT and Messaging Protocol
+
+### What is JMQT?
 
 JMQT is a publish-subscribe based IoT and messaging protocol. JMQT protocol is open & free, and can be used without any license agreement. No one owns JMQT.
 
