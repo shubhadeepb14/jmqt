@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+## What is JMQT?
 
-You can use the [editor on GitHub](https://github.com/shubhadeepb14/jmqtwebsite/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+JMQT is a publish-subscribe based IoT and messaging protocol. JMQT protocol is open & free, and can be used without any license agreement. No one owns JMQT.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+JMQT version 1.0 has been released in December, 2018. 
 
-### Markdown
+### Why JMQT was developed?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+JMQT has been developed to **simplify** and **modernize** the **publish-subscribe** based messaging systems. JMQT uses **JSON** packets for data exchange which minimizes the learning curve for the developers and can speed up the development cycle. JSON is natively supported in almost every major programming language which makes the parsing and formatting the JMQT packets easier. 
 
-```markdown
-Syntax highlighted code block
+JMQT supports **P2P** (Point to Point) messaging in addition to publish-subscribe based messaging. This feature allows the programmers to develop robust solutions (for example, IoT or messenger applications) which needs point to point communication between the clients.
 
-# Header 1
-## Header 2
-### Header 3
+### Principles of JMQT 
 
-- Bulleted
-- List
+- JMQT is a **publish-subscribe** based messaging system which uses JSON packets for data exchange.
 
-1. Numbered
-2. List
+- JMQT is a **text based** (more precisely, JSON text) protocol and works on top of TCP/IP.
 
-**Bold** and _Italic_ and `Code` text
+- JMQT has **modernized** the authentication system using **Authentication Token** on the contrary to the other IoT protocols which use conventional user id and password (such as MQTT). 
 
-[Link](url) and ![Image](src)
-```
+- JMQT can be useful in **IoT**, **messengers** or other **real-time remote messaging** solutions where the a client needs to distribute a message among multiple remote clients or send a message directly to a remote client without interfering the other clients.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- JMQT supports **Point to Point** Messaging enabling the clients to send direct messages to a remote client.
 
-### Jekyll Themes
+- JMQT clients can send **Control Messages** which works like HTTP APIs, i.e. the server processes the control messages and replies back with some data which the clients may need.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shubhadeepb14/jmqtwebsite/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- JMQT is **not** designed for **low bandwidth** networks, though the size of the JMQT packets can be as small as 10 Bytes. JMQT packets needs more memory and bandwidth than the byte-based protocols (e.g. MQTT) because of its text-based nature.
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Versions and Documentation
+
+Version 1.0
+Released on December, 2018
+
+[Download Protocol Documentation](https://github.com/shubhadeepb14/jmqtdoc/raw/master/JMQT_1_0_Specifications.pdf)
+ 
+
+### Implementation
+
+An open source implementation of JMQT is available. [Click here](https://github.com/shubhadeepb14/jmqt) to visit the repository.
+
+ 
+
+### Stay Connected
+
+To become a part of the JMQT community, you can subscribe to our newsletter below. You can also find us on twitter @jmqtorg.
