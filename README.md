@@ -1,5 +1,5 @@
 # JMQT 1.0 Open Source Server and Client
-This GitHub repository contains an open source implementation of the [JMQT protocol version 1.0](https://www.jmqt.org/specifications). There are four primary modules which are freely available to use :
+This GitHub repository contains an open source implementation of the [JMQT protocol version 1.0](https://shubhadeepb14.github.io/jmqt/). There are four primary modules which are freely available to use :
 1. A **python based JMQT server** (with Load Balancer support for distributed environment) developed using [python asyncio](https://docs.python.org/3/library/asyncio.html) (python 3.5 or above)
 2. A **python based JMQT client** (python 2.7 or above)
 3. A **python load blanacer** developed using [python PumpkinLB](https://github.com/kata198/PumpkinLB) library (python 3.5 or above)
@@ -8,7 +8,7 @@ This GitHub repository contains an open source implementation of the [JMQT proto
 ## About JMQT
 JMQT is a publish-subscribe based IoT and messaging protocol. JMQT protocol is open & free, and can be used without any license agreement. No one owns JMQT.
 
-To know more about JMQT, visit [JMQT website](https://www.jmqt.org/)
+To know more about JMQT, visit [JMQT website](https://shubhadeepb14.github.io/jmqt/)
 
 ## Directory Structure
 - **pyjmqt** : Python based **JMQT server, client and load balancer** libraries
