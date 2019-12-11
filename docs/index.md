@@ -1,4 +1,4 @@
-## An Open Source independent IoT and Messaging Protocol
+## JMQT - JSON Message Queueing and Transfer
 
 ### What is JMQT?
 
@@ -42,4 +42,4 @@ An open source implementation of JMQT is available. [Click here](https://github.
 
 ### Contribute
 
-To contribute in JMQT, please drop an email to shubhadeep.banerjee10@gmail.com. But, please [visit the repository](https://github.com/shubhadeepb14/jmqt) and read the [code of conducts](https://github.com/shubhadeepb14/jmqt/blob/master/CODE_OF_CONDUCT.md) before sending an email.
+To contribute in JMQT, please drop an email to [shubhadeep.banerjee10@gmail.com](mailto:shubhadeep.banerjee10@gmail.com). But, please [visit the repository](https://github.com/shubhadeepb14/jmqt) and read the [code of conducts](https://github.com/shubhadeepb14/jmqt/blob/master/CODE_OF_CONDUCT.md) before sending an email.
